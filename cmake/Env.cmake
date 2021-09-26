@@ -21,7 +21,7 @@ set(LD_BIN "${DEVTOOLS_DIR}/bin/ld")
 # share compile cache between different directories
 set(DEBUG_PREFIX "-fdebug-prefix-map=${CMAKE_SOURCE_DIR}=.")
 
-set(LD_OPT "-Wl,--build-id=uuid")
+set(LD_OPT "-o0 -Wl,--build-id=uuid")
 set(BUILD_OPT "${DEBUG_PREFIX}")
 
 if (OB_USE_LLVM_LIBTOOLS)

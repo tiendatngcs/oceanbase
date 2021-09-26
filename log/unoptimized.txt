@@ -1,0 +1,107 @@
+==1244929== Memcheck, a memory error detector
+==1244929== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1244929== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1244929== Command: ./observer
+==1244929== Parent PID: 1219422
+==1244929== 
+==1244929== Warning: set address range perms: large range [0xb931000, 0x34023000) (defined)
+==1244929== 
+==1244929== HEAP SUMMARY:
+==1244929==     in use at exit: 23,605,168 bytes in 24,340 blocks
+==1244929==   total heap usage: 24,387 allocs, 47 frees, 23,619,789 bytes allocated
+==1244929== 
+==1244930== Syscall param write(buf) points to uninitialised byte(s)
+==1244930==    at 0x34B2489D: syscall (syscall.S:38)
+==1244930==    by 0xB418869: write_validate (Ginit.c:141)
+==1244930==    by 0xB418869: mincore_validate (Ginit.c:171)
+==1244930==    by 0xB4187DC: validate_mem (Ginit.c:308)
+==1244930==    by 0xB4187DC: access_mem (Ginit.c:330)
+==1244930==    by 0xB41C2C3: dwarf_get (libunwind_i.h:169)
+==1244930==    by 0xB41C2C3: apply_reg_state (Gparser.c:885)
+==1244930==    by 0xB41D767: _ULx86_64_dwarf_step (Gparser.c:974)
+==1244930==    by 0xB418F4F: _ULx86_64_step (Gstep.c:71)
+==1244930==    by 0xB419D23: trace_init_addr (Gtrace.c:248)
+==1244930==    by 0xB419D23: trace_lookup (Gtrace.c:330)
+==1244930==    by 0xB419D23: _ULx86_64_tdep_trace (Gtrace.c:447)
+==1244930==    by 0xB41814C: backtrace (backtrace.c:69)
+==1244930==    by 0xB1C13C4: oceanbase::common::lbt() (utility.cpp:69)
+==1244930==    by 0xB0A0C3C: oceanbase::common::ObLogger::log_data(char const*, int, oceanbase::common::ObLogger::LogLocation, oceanbase::common::ObLogger::LogBuffer&) (ob_log.cpp:854)
+==1244930==    by 0x1C47810: oceanbase::common::ObLogger::log_message_kv(char const*, int, char const*, int, char const*, unsigned long, char const*, char const*) (ob_log.h:805)
+==1244930==    by 0x1C43E80: void oceanbase::common::OB_PRINT<int>(char const*, int, char const*, int, char const*, unsigned long, char const*, char const*, int const&) (ob_log.h:1461)
+==1244930==  Address 0x1ffeffa000 is on thread 1's stack
+==1244930==  in frame #7, created by backtrace (backtrace.c:59)
+==1244930== 
+==1244930== Syscall param write(buf) points to unaddressable byte(s)
+==1244930==    at 0x34B2489D: syscall (syscall.S:38)
+==1244930==    by 0xB418869: write_validate (Ginit.c:141)
+==1244930==    by 0xB418869: mincore_validate (Ginit.c:171)
+==1244930==    by 0xB4187DC: validate_mem (Ginit.c:308)
+==1244930==    by 0xB4187DC: access_mem (Ginit.c:330)
+==1244930==    by 0xB418CC7: dwarf_get (libunwind_i.h:169)
+==1244930==    by 0xB418CC7: _ULx86_64_access_reg (Gregs.c:130)
+==1244930==    by 0xB41C19A: apply_reg_state (Gparser.c:802)
+==1244930==    by 0xB41D767: _ULx86_64_dwarf_step (Gparser.c:974)
+==1244930==    by 0xB418F4F: _ULx86_64_step (Gstep.c:71)
+==1244930==    by 0xB419D23: trace_init_addr (Gtrace.c:248)
+==1244930==    by 0xB419D23: trace_lookup (Gtrace.c:330)
+==1244930==    by 0xB419D23: _ULx86_64_tdep_trace (Gtrace.c:447)
+==1244930==    by 0xB41814C: backtrace (backtrace.c:69)
+==1244930==    by 0xB1C13C4: oceanbase::common::lbt() (utility.cpp:69)
+==1244930==    by 0xB0A0C3C: oceanbase::common::ObLogger::log_data(char const*, int, oceanbase::common::ObLogger::LogLocation, oceanbase::common::ObLogger::LogBuffer&) (ob_log.cpp:854)
+==1244930==    by 0x1C47810: oceanbase::common::ObLogger::log_message_kv(char const*, int, char const*, int, char const*, unsigned long, char const*, char const*) (ob_log.h:805)
+==1244930==  Address 0x1ffeff9000 is on thread 1's stack
+==1244930==  1048 bytes below stack pointer
+==1244930== 
+==1244930== Syscall param write(buf) points to uninitialised byte(s)
+==1244930==    at 0x34B2489D: syscall (syscall.S:38)
+==1244930==    by 0xB418869: write_validate (Ginit.c:141)
+==1244930==    by 0xB418869: mincore_validate (Ginit.c:171)
+==1244930==    by 0xB4187DC: validate_mem (Ginit.c:308)
+==1244930==    by 0xB4187DC: access_mem (Ginit.c:330)
+==1244930==    by 0xB418CC7: dwarf_get (libunwind_i.h:169)
+==1244930==    by 0xB418CC7: _ULx86_64_access_reg (Gregs.c:130)
+==1244930==    by 0xB41C19A: apply_reg_state (Gparser.c:802)
+==1244930==    by 0xB41D767: _ULx86_64_dwarf_step (Gparser.c:974)
+==1244930==    by 0xB418F4F: _ULx86_64_step (Gstep.c:71)
+==1244930==    by 0xB419D23: trace_init_addr (Gtrace.c:248)
+==1244930==    by 0xB419D23: trace_lookup (Gtrace.c:330)
+==1244930==    by 0xB419D23: _ULx86_64_tdep_trace (Gtrace.c:447)
+==1244930==    by 0xB41814C: backtrace (backtrace.c:69)
+==1244930==    by 0xB1C13C4: oceanbase::common::lbt() (utility.cpp:69)
+==1244930==    by 0x992A205: oceanbase::common::hash::ObHashTable<oceanbase::storage::ObIntermMacroKey, oceanbase::common::hash::HashMapPair<oceanbase::storage::ObIntermMacroKey, oceanbase::storage::ObResourceValueStore<oceanbase::storage::ObIntermMacroValue>*>, oceanbase::common::hash::hash_func<oceanbase::storage::ObIntermMacroKey>, oceanbase::common::hash::equal_to<oceanbase::storage::ObIntermMacroKey>, oceanbase::common::hash::pair_first<oceanbase::common::hash::HashMapPair<oceanbase::storage::ObIntermMacroKey, oceanbase::storage::ObResourceValueStore<oceanbase::storage::ObIntermMacroValue>*> >, oceanbase::common::hash::SimpleAllocer<oceanbase::common::hash::ObHashTableNode<oceanbase::common::hash::HashMapPair<oceanbase::storage::ObIntermMacroKey, oceanbase::storage::ObResourceValueStore<oceanbase::storage::ObIntermMacroValue>*> >, 91, oceanbase::common::hash::SpinMutexDefendMode, oceanbase::common::hash::DefaultSimpleAllocerAllocator>, oceanbase::common::hash::NoPthreadDefendMode, oceanbase::common::hash::NormalPointer, oceanbase::common::ObMalloc, 1l>::begin()::{lambda(char const*)#1}::operator()(char const*) const (ob_hashtable.h:686)
+==1244930==    by 0x992A071: oceanbase::common::hash::ObHashTable<oceanbase::storage::ObIntermMacroKey, oceanbase::common::hash::HashMapPair<oceanbase::storage::ObIntermMacroKey, oceanbase::storage::ObResourceValueStore<oceanbase::storage::ObIntermMacroValue>*>, oceanbase::common::hash::hash_func<oceanbase::storage::ObIntermMacroKey>, oceanbase::common::hash::equal_to<oceanbase::storage::ObIntermMacroKey>, oceanbase::common::hash::pair_first<oceanbase::common::hash::HashMapPair<oceanbase::storage::ObIntermMacroKey, oceanbase::storage::ObResourceValueStore<oceanbase::storage::ObIntermMacroValue>*> >, oceanbase::common::hash::SimpleAllocer<oceanbase::common::hash::ObHashTableNode<oceanbase::common::hash::HashMapPair<oceanbase::storage::ObIntermMacroKey, oceanbase::storage::ObResourceValueStore<oceanbase::storage::ObIntermMacroValue>*> >, 91, oceanbase::common::hash::SpinMutexDefendMode, oceanbase::common::hash::DefaultSimpleAllocerAllocator>, oceanbase::common::hash::NoPthreadDefendMode, oceanbase::common::hash::NormalPointer, oceanbase::common::ObMalloc, 1l>::begin() (ob_hashtable.h:686)
+==1244930==  Address 0x1ffeffa000 is on thread 1's stack
+==1244930==  in frame #7, created by _ULx86_64_tdep_trace (Gtrace.c:398)
+==1244930== 
+==1244929== LEAK SUMMARY:
+==1244929==    definitely lost: 0 bytes in 0 blocks
+==1244929==    indirectly lost: 0 bytes in 0 blocks
+==1244929==      possibly lost: 0 bytes in 0 blocks
+==1244929==    still reachable: 23,605,168 bytes in 24,340 blocks
+==1244929==         suppressed: 0 bytes in 0 blocks
+==1244929== Reachable blocks (those to which a pointer was found) are not shown.
+==1244929== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1244929== 
+==1244929== For lists of detected and suppressed errors, rerun with: -s
+==1244929== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1244930== 
+==1244930== HEAP SUMMARY:
+==1244930==     in use at exit: 1,365,488 bytes in 23,647 blocks
+==1244930==   total heap usage: 24,408 allocs, 761 frees, 23,690,749 bytes allocated
+==1244930== 
+==1244930== 16,384 bytes in 1 blocks are definitely lost in loss record 12 of 17
+==1244930==    at 0x3485E7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1244930==    by 0x1C3FC0C: main (main.cpp:371)
+==1244930== 
+==1244930== LEAK SUMMARY:
+==1244930==    definitely lost: 16,384 bytes in 1 blocks
+==1244930==    indirectly lost: 0 bytes in 0 blocks
+==1244930==      possibly lost: 0 bytes in 0 blocks
+==1244930==    still reachable: 1,349,104 bytes in 23,646 blocks
+==1244930==         suppressed: 0 bytes in 0 blocks
+==1244930== Reachable blocks (those to which a pointer was found) are not shown.
+==1244930== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1244930== 
+==1244930== Use --track-origins=yes to see where uninitialised values come from
+==1244930== For lists of detected and suppressed errors, rerun with: -s
+==1244930== ERROR SUMMARY: 55 errors from 4 contexts (suppressed: 0 from 0)
