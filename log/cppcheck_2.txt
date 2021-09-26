@@ -8224,3 +8224,1928 @@ Checking unittest/storage/transaction/test_ob_trans_submit_log_cb.cpp ...
 3484/3485 files checked 99% done
 Checking unittest/tools/ob_error/test_ob_error.cpp ...
 3485/3485 files checked 100% done
+
+
+
+
+
+------------------------------------------
+
+
+
+
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/common/data_buffer.cpp:36:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObDataBuffer)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/common/ob_unit_info.cpp:63:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObUnit)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/checksum/ob_crc64.cpp:2852:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObBatchChecksum)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/io/ob_io_benchmark.cpp:57:11: warning: The address of local variable 'read_results_' might be accessed at non-zero index. [objectIndex]
+  results_[ObIOMode::IO_MODE_WRITE] = &write_results_;
+          ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/io/ob_io_benchmark.cpp:56:38: note: Address of variable taken here.
+  results_[ObIOMode::IO_MODE_READ] = &read_results_;
+                                     ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/io/ob_io_benchmark.cpp:57:11: note: The address of local variable 'read_results_' might be accessed at non-zero index.
+  results_[ObIOMode::IO_MODE_WRITE] = &write_results_;
+          ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/net/ob_addr.cpp:498:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObAddr)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/string/ob_strings.cpp:64:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObStrings)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/signal/ob_signal_worker.cpp:205:13: error: There is an unknown macro here somewhere. Configuration is required. If DEFER is a macro then please configure it. [unknownMacro]
+            DEFER(
+            ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/lib/coro/thread.cpp:169:3: error: There is an unknown macro here somewhere. Configuration is required. If DEFER is a macro then please configure it. [unknownMacro]
+  DEFER(if (restore_sigstack) { sigaltstack(&oss, nullptr); });
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/deps/oblib/src/rpc/obrpc/ob_rpc_packet.cpp:27:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRpcPacketHeader)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/archive/ob_archive_task_queue.cpp:85:10: error: syntax error [syntaxError]
+  } else if OB_FAIL (queue_.pop(link)) {
+         ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/clog/ob_log_flush_task.h:55:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(N_LOG_TYPE, log_type_, N_LOG_ID, log_id_, "submit_timestamp", submit_timestamp_, N_PARTITION_KEY,
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/observer/ob_server_struct.cpp:179:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObGlobalContext)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/observer/omt/ob_tenant.h:429:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(id), K_(compat_mode), K_(unit_min_cpu), K_(unit_max_cpu), K_(slice), K_(slice_remain), K_(token_cnt),
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/rootserver/ob_alloc_replica_strategy.cpp:1398:3: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+  FOR_BEGIN_END_E(replica_addr, partition, ts_.all_replica_, OB_SUCC(ret))
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/rootserver/ob_rs_job_table_operator.h:73:1: error: syntax error [syntaxError]
+BUILD_DML_ELEMENTS(1);
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/rootserver/ob_shrink_resource_pool_checker.cpp:199:5: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+    FOR_BEGIN_END_E(r, partition, tenant_stat_->all_replica_, OB_SUCCESS == ret)
+    ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/backup/ob_backup_archive_log_round_stat.cpp:472:28: error: Same iterator is used with different containers 'round_stat.tenant_pg_map_' and 'current_round_stat_.tenant_pg_map_'. [iterators2]
+        iter = round_stat->tenant_pg_map_->begin();
+                           ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/backup/ob_backup_archive_log_round_stat.cpp:473:37: note: Same iterator is used with different containers 'round_stat.tenant_pg_map_' and 'current_round_stat_.tenant_pg_map_'.
+        for (; OB_SUCC(ret) && iter != current_round_stat_->tenant_pg_map_->end(); ++iter) {
+                                    ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/backup/ob_backup_archive_log_round_stat.cpp:472:28: note: Same iterator is used with different containers 'round_stat.tenant_pg_map_' and 'current_round_stat_.tenant_pg_map_'.
+        iter = round_stat->tenant_pg_map_->begin();
+                           ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/ob_priv_common.cpp:644:3: error: syntax error [syntaxError]
+  OZ(array.push_back(0));
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/ob_cascad_member_list.cpp:256:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObCascadMemberList)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/ob_rs_mgr.cpp:316:3: error: syntax error [syntaxError]
+  if OB_FAIL (ret) {
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/ob_zone_info.cpp:255:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObGlobalInfo)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/config/ob_common_config.cpp:115:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObCommonConfig)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/datum/ob_datum_util.h:41:60: error: syntax error [syntaxError]
+typedef ObConstIntMapping<ObMaxTC, LST_DO(SELECT_TYPE_TC, (, ), OBJ_TYPE_TC_PAIRS)> ObObjTypeTCMap;
+                                                           ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/object/ob_obj_cast.cpp:265:0: error: failed to expand 'SET_RES_DATETIME', Wrong number of parameters for macro 'SET_RES_OBJ'. [preprocessorErrorDirective]
+#define SET_RES_DATETIME(res) SET_RES_OBJ(res, datetime, expect_type, COMMA, value, ObTimeConverter::ZERO_DATETIME)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/partition_table/ob_persistent_partition_table.cpp:744:12: error: syntax error [syntaxError]
+    } else if OB_FAIL (proxy->set_original_leader(table_id, partition_id, is_original_leader)) {
+           ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/rc/ob_tenant_base.cpp:27:75: error: syntax error [syntaxError]
+ObTenantBase::ObTenantBase(const int64_t id) : LST_DO2(CONSTRUCT_MEMBER, (, ), MTL_MEMBERS), id_(id), inited_(false)
+                                                                          ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/rpc/ob_batch_proxy.cpp:38:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObBatchPacket)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/schema/ob_schema_struct.cpp:6469:13: error: syntax error [syntaxError]
+  BASE_SER((, ObBasePartition));
+            ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/schema/ob_table_iter.h:36:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(is_inited), K_(cur_tenant_idx), K_(tenant_ids))
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/table/ob_table.cpp:730:41: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObTableBatchOperation,)
+                                        ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/share/parameter/ob_parameter_attr.cpp:23:1: error: syntax error [syntaxError]
+DEF_ATTR_VALUES(Section, ROOT_SERVICE, LOAD_BALANCE, DAILY_MERGE, LOCATION_CACHE, SSTABLE, CLOG, CACHE, TRANS, TENANT,
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/code_generator/ob_static_engine_cg.cpp:2960:33: warning: Possible null pointer dereference: table_columns [nullPointer]
+  OZ(convert_update_assignments(table_columns->index_dml_infos_.at(0).column_exprs_,
+                                ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/code_generator/ob_static_engine_cg.cpp:2857:39: note: Assignment 'table_columns=NULL', assigned value is 0
+  const TableColumns* table_columns = NULL;
+                                      ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/code_generator/ob_static_engine_cg.cpp:2960:33: note: Null pointer dereference
+  OZ(convert_update_assignments(table_columns->index_dml_infos_.at(0).column_exprs_,
+                                ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/code_generator/ob_static_engine_cg.cpp:2961:7: warning: Possible null pointer dereference: table_columns [nullPointer]
+      table_columns->index_dml_infos_.at(0).assignments_,
+      ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/code_generator/ob_static_engine_cg.cpp:2857:39: note: Assignment 'table_columns=NULL', assigned value is 0
+  const TableColumns* table_columns = NULL;
+                                      ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/code_generator/ob_static_engine_cg.cpp:2961:7: note: Null pointer dereference
+      table_columns->index_dml_infos_.at(0).assignments_,
+      ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/ob_index_sstable_builder.cpp:196:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObIndexSSTableBuilder::BuildParam)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/dtl/ob_op_metric.h:47:3: error: syntax error [syntaxError]
+  enum MetricType { OP = 0, DTL = 1, DEFAULT_MAX = 2 };
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/ob_serializable_function.cpp:35:63: error: syntax error [syntaxError]
+  bool all_reg_flags[] = {LST_DO(LIST_REGISTERED_FUNC_ARRAY, (, ), SER_FUNC_ARRAY_ID_ENUM)};
+                                                              ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/expr/ob_expr_quote.cpp:48:5: error: syntax error [syntaxError]
+    if OB_FAIL (aggregate_charsets_for_string_result(type, &type1, 1, type_ctx.get_coll_type())) {
+    ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/expr/ob_infix_expression.cpp:39:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObInfixExprItem)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/join/ob_basic_nested_loop_join.cpp:225:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObBasicNestedLoopJoin)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/px/ob_granule_iterator_op.cpp:89:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObGIOpInput)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/px/ob_px_dtl_msg.h:68:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(row_match_count), K_(row_duplicated_count), K_(row_deleted_count))
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/set/ob_merge_set_operator.cpp:261:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObMergeSetOperator)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/sort/ob_sort.cpp:581:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObSort)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/table/ob_table_scan_op.cpp:48:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE_SIZE(ObTableScanOpInput)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/basic/ob_temp_table_insert.cpp:73:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTempTableInsertInput)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/cmd/ob_load_data_rpc.cpp:601:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLoadbuffer)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/dml/ob_table_conflict_row_fetcher.cpp:32:3: error: syntax error [syntaxError]
+  ARRAY_FOREACH(part_conflict_rows_, i)
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/dml/ob_table_modify.cpp:353:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableModify)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/expr/ob_expr_cast.cpp:869:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObExprCast)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/expr/ob_expr_dll_udf.cpp:203:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObExprDllUdf)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/engine/expr/ob_expr_make_set.cpp:50:5: error: syntax error [syntaxError]
+    if OB_FAIL (aggregate_charsets_for_string_result(type, &types[1], param_num - 1, type_ctx.get_coll_type())) {
+    ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/executor/ob_determinate_task_transmit.cpp:59:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDeterminateTaskTransmit)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/executor/ob_job_control.cpp:429:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObJobControl)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/executor/ob_transmit.cpp:238:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTransmit)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/monitor/ob_phy_operator_monitor_info.cpp:199:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPhyOperatorMonitorInfo)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/optimizer/ob_log_plan.cpp:2265:54: error: Iterator 'candidate_server_list_iter' used after element has been erased. [eraseDereference]
+              if (OB_FAIL(candidate_server_list.erase(candidate_server_list_iter))) {
+                                                     ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/optimizer/ob_log_plan.cpp:2255:11: note: Iterator 'candidate_server_list_iter' used after element has been erased.
+          for (; OB_SUCC(ret) && candidate_server_list_iter != candidate_server_list.end();
+          ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/optimizer/ob_log_plan.cpp:2265:54: note: Iterator 'candidate_server_list_iter' used after element has been erased.
+              if (OB_FAIL(candidate_server_list.erase(candidate_server_list_iter))) {
+                                                     ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/optimizer/ob_route_policy.cpp:290:54: error: Iterator 'intersect_server_list_iter' used after element has been erased. [eraseDereference]
+              if (OB_FAIL(intersect_server_list.erase(intersect_server_list_iter))) {
+                                                     ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/optimizer/ob_route_policy.cpp:267:11: note: Iterator 'intersect_server_list_iter' used after element has been erased.
+          for (; OB_SUCC(ret) && intersect_server_list_iter != intersect_server_list.end();
+          ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/optimizer/ob_route_policy.cpp:290:54: note: Iterator 'intersect_server_list_iter' used after element has been erased.
+              if (OB_FAIL(intersect_server_list.erase(intersect_server_list_iter))) {
+                                                     ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/rewrite/ob_transform_utils.cpp:2322:5: error: syntax error [syntaxError]
+    if OB_FAIL (SMART_CALL(
+    ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/sql/session/ob_basic_session_info.cpp:2771:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObBasicSessionInfo::SysVarsCacheData)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/storage/blocksstable/ob_data_buffer.h:127:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObBufferHolder)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/storage/ob_partition_base_data_physical_restore.h:302:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(table_id), K_(backup_index_id), K_(backup_path_info))
+  ^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/storage/transaction/ob_trans_define.cpp:3077:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTransDesc)
+^
+/home/grads/t/tiendat.ng.cs/syssec/oceanbase/src/storage/transaction/ob_trans_log.cpp:185:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTransMutator)
+^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/glr.c:38:78: error: No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported. [syntaxError]
+# If glr.cc is including this file and thus has already set b4_pure_flag, don't
+                                                                             ^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/glr.cc:85:1: error: Unmatched '{'. Configuration: ''. [syntaxError]
+{
+^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/glr.cc:85:1: error: Unmatched '{'. Configuration: 'YYDEBUG'. [syntaxError]
+{
+^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/lalr1.cc:100:3: error: Unmatched '{'. Configuration: ''. [syntaxError]
+  {
+  ^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/lalr1.cc:100:3: error: Unmatched '{'. Configuration: 'ENABLE_NLS;YYENABLE_NLS'. [syntaxError]
+  {
+  ^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/lalr1.cc:100:3: error: Unmatched '{'. Configuration: 'YYENABLE_NLS'. [syntaxError]
+  {
+  ^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/lalr1.cc:100:3: error: Unmatched '{'. Configuration: 'YYERROR_VERBOSE'. [syntaxError]
+  {
+  ^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/location.cc:41:3: error: Unmatched '{'. Configuration: ''. [syntaxError]
+  {
+  ^
+deps/3rd/usr/local/oceanbase/devtools/share/bison/yacc.c:269:0: error: #endif without #if [preprocessorErrorDirective]
+#endif
+^
+deps/3rd/usr/local/oceanbase/devtools/share/cmake-3.20/Modules/FindMPI/test_mpi.c:31:3: error: Code 'MPI::MPI_Init' is invalid C code. Use --std or --language to configure the language. [syntaxError]
+  MPI::MPI_Init(&argc, &argv);
+  ^
+deps/easy/src/io/easy_connection.c:2545:3: error: Address of local auto-variable assigned to a function parameter. [autoVariables]
+  c->send_queue = (easy_hash_t*)&request_list;
+  ^
+deps/easy/src/io/ev.c:205:0: error: No header in #include [preprocessorErrorDirective]
+# include EV_H
+^
+deps/oblib/src/common/data_buffer.cpp:36:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObDataBuffer)
+^
+deps/oblib/src/common/lease/ob_lease_common.cpp:39:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObLease)
+^
+deps/oblib/src/common/ob_partition_key.cpp:168:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObPartitionKey)
+^
+deps/oblib/src/common/ob_record_header.cpp:198:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRecordHeader)
+^
+deps/oblib/src/common/ob_unit_info.cpp:63:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObUnit)
+^
+deps/oblib/src/common/row/ob_row.cpp:30:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObColumnInfo)
+^
+deps/oblib/src/common/row/ob_row_checksum.cpp:32:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRowChecksumValue)
+^
+deps/oblib/src/common/row/ob_row_desc.cpp:126:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRowDesc)
+^
+deps/oblib/src/common/row/ob_row_store.cpp:1040:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRowStore)
+^
+deps/oblib/src/lib/async/ev.c:196:0: error: No header in #include [preprocessorErrorDirective]
+# include EV_H
+^
+deps/oblib/src/lib/checksum/ob_crc64.cpp:2852:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObBatchChecksum)
+^
+deps/oblib/src/lib/compress/snappy/snappy_unittest.cc:563:1: error: syntax error [syntaxError]
+TYPED_TEST(CorruptedTest, VerifyCorrupted) {
+^
+deps/oblib/src/lib/compress/zstd/zstd_compress.c:2953:11: error: Pointer addition with NULL pointer. [nullPointerArithmetic]
+  if ((ip + srcSize > cctx->dictBase + cctx->lowLimit) & (ip < cctx->dictBase + cctx->dictLimit)) {
+          ^
+deps/oblib/src/lib/compress/zstd/zstd_compress.c:3740:47: note: Calling function 'ZSTD_compressEnd', 4th argument 'NULL' value is 0
+                                              NULL,
+                                              ^
+deps/oblib/src/lib/compress/zstd/zstd_compress.c:3250:79: note: Calling function 'ZSTD_compressContinue_internal', 4th argument 'src' value is 0
+  size_t const cSize = ZSTD_compressContinue_internal(cctx, dst, dstCapacity, src, srcSize, 1, 1);
+                                                                              ^
+deps/oblib/src/lib/compress/zstd/zstd_compress.c:2924:26: note: Assignment 'ip=(const unsigned char*)src', assigned value is 0
+  const BYTE* const ip = (const BYTE*)src;
+                         ^
+deps/oblib/src/lib/compress/zstd/zstd_compress.c:2953:11: note: Null pointer addition
+  if ((ip + srcSize > cctx->dictBase + cctx->lowLimit) & (ip < cctx->dictBase + cctx->dictLimit)) {
+          ^
+deps/oblib/src/lib/coro/thread.cpp:169:3: error: There is an unknown macro here somewhere. Configuration is required. If DEFER is a macro then please configure it. [unknownMacro]
+  DEFER(if (restore_sigstack) { sigaltstack(&oss, nullptr); });
+  ^
+deps/oblib/src/lib/io/ob_io_benchmark.cpp:57:11: warning: The address of local variable 'read_results_' might be accessed at non-zero index. [objectIndex]
+  results_[ObIOMode::IO_MODE_WRITE] = &write_results_;
+          ^
+deps/oblib/src/lib/io/ob_io_benchmark.cpp:56:38: note: Address of variable taken here.
+  results_[ObIOMode::IO_MODE_READ] = &read_results_;
+                                     ^
+deps/oblib/src/lib/io/ob_io_benchmark.cpp:57:11: note: The address of local variable 'read_results_' might be accessed at non-zero index.
+  results_[ObIOMode::IO_MODE_WRITE] = &write_results_;
+          ^
+deps/oblib/src/lib/net/ob_addr.cpp:498:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObAddr)
+^
+deps/oblib/src/lib/net/tbnetutil.cpp:139:51: error: The address of local variable 'ip' is accessed at non-zero index. [objectIndex]
+    sprintf(str, "%d.%d.%d.%d:%d", bytes[0], bytes[1], bytes[2], bytes[3], port);
+                                                  ^
+deps/oblib/src/lib/net/tbnetutil.cpp:137:42: note: Address of variable taken here.
+  unsigned char* bytes = (unsigned char*)&ip;
+                                         ^
+deps/oblib/src/lib/net/tbnetutil.cpp:139:51: note: The address of local variable 'ip' is accessed at non-zero index.
+    sprintf(str, "%d.%d.%d.%d:%d", bytes[0], bytes[1], bytes[2], bytes[3], port);
+                                                  ^
+deps/oblib/src/lib/number/ob_number_v2.cpp:61:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObNumber)
+^
+deps/oblib/src/lib/oblog/ob_log.cpp:2160:17: error: va_list 'args_cpy' was opened but not closed by va_end(). [va_end_missing]
+      return ret;
+                ^
+deps/oblib/src/lib/rowid/ob_urowid.cpp:250:30: error: syntax error [syntaxError]
+    LST_DO(DEF_GET_PK_FUNC, (, ), ALL_TYPES_USED_IN_INNER_FUNC)};
+                             ^
+deps/oblib/src/lib/signal/ob_signal_worker.cpp:205:13: error: There is an unknown macro here somewhere. Configuration is required. If DEFER is a macro then please configure it. [unknownMacro]
+            DEFER(
+            ^
+deps/oblib/src/lib/string/ob_strings.cpp:64:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObStrings)
+^
+deps/oblib/src/lib/timezone/ob_timezone_info.cpp:38986:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObOTimestampData)
+^
+deps/oblib/src/lib/utility/utility.cpp:391:72: error: The address of local variable 'ip' is accessed at non-zero index. [objectIndex]
+    IGNORE_RETURN snprintf(buffer, n, "%d.%d.%d.%d:-1", bytes[0], bytes[1], bytes[2], bytes[3]);
+                                                                       ^
+deps/oblib/src/lib/utility/utility.cpp:387:42: note: Address of variable taken here.
+  unsigned char* bytes = (unsigned char*)&ip;
+                                         ^
+deps/oblib/src/lib/utility/utility.cpp:391:72: note: The address of local variable 'ip' is accessed at non-zero index.
+    IGNORE_RETURN snprintf(buffer, n, "%d.%d.%d.%d:-1", bytes[0], bytes[1], bytes[2], bytes[3]);
+                                                                       ^
+deps/oblib/src/lib/utility/utility.cpp:400:67: error: The address of local variable 'ip' is accessed at non-zero index. [objectIndex]
+  IGNORE_RETURN snprintf(buffer, n, "%d.%d.%d.%d", bytes[0], bytes[1], bytes[2], bytes[3]);
+                                                                  ^
+deps/oblib/src/lib/utility/utility.cpp:399:42: note: Address of variable taken here.
+  unsigned char* bytes = (unsigned char*)&ip;
+                                         ^
+deps/oblib/src/lib/utility/utility.cpp:400:67: note: The address of local variable 'ip' is accessed at non-zero index.
+  IGNORE_RETURN snprintf(buffer, n, "%d.%d.%d.%d", bytes[0], bytes[1], bytes[2], bytes[3]);
+                                                                  ^
+deps/oblib/src/lib/utility/utility.cpp:1283:13: error: va_list 'ap2' was opened but not closed by va_end(). [va_end_missing]
+  return ret;
+            ^
+deps/oblib/src/rpc/obrpc/ob_rpc_packet.cpp:27:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRpcPacketHeader)
+^
+deps/oblib/src/rpc/obrpc/ob_rpc_time.cpp:28:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObRpcCostTime)
+^
+deps/oblib/unittest/common/test_cell_reader.cpp:50:1: error: syntax error [syntaxError]
+TEST_F(TestCellReader, test_null)
+^
+deps/oblib/unittest/common/test_cell_writer.cpp:245:1: error: syntax error [syntaxError]
+TEST_F(TestCellWriter, test_null)
+^
+deps/oblib/unittest/common/test_memfrag_recycle_allocator.cpp:153:1: error: syntax error [syntaxError]
+TEST(ObMRAllocatorRecycler, test_recycle)
+^
+deps/oblib/unittest/common/test_ob_easy_log.cpp:35:1: error: syntax error [syntaxError]
+TEST(TestEasyLog, ob_easy_log_format)
+^
+deps/oblib/unittest/common/test_ob_partition_key.cpp:29:1: error: syntax error [syntaxError]
+TEST_F(TestObPartitionKey, test_tenant_id)
+^
+deps/oblib/unittest/common/test_smart_call.cpp:33:1: error: syntax error [syntaxError]
+TEST(sc, usability)
+^
+deps/oblib/unittest/common/test_smart_var.cpp:258:1: error: syntax error [syntaxError]
+TEST(utility, all)
+^
+deps/oblib/unittest/common/test_sql_string.cpp:54:1: error: syntax error [syntaxError]
+TEST(ObSqlString, assign)
+^
+deps/oblib/unittest/common/test_timeout_ctx.cpp:32:1: error: syntax error [syntaxError]
+TEST(ObTimeoutCtx, all)
+^
+deps/oblib/unittest/lib/container/test_array_helper.cpp:33:1: error: syntax error [syntaxError]
+TEST_F(TestArrayHelper, common)
+^
+deps/oblib/unittest/lib/container/test_bitmap.cpp:48:1: error: syntax error [syntaxError]
+TEST_F(TestObBitmap, basic_funcs)
+^
+deps/oblib/unittest/lib/container/test_ext_ring_buffer.cpp:51:1: error: syntax error [syntaxError]
+TEST(RINGBUFFER_BASE, debug)
+^
+deps/oblib/unittest/lib/container/test_paringheap.cpp:136:1: error: syntax error [syntaxError]
+TEST(TEST_ParingHeap, empty)
+^
+deps/oblib/unittest/lib/container/test_rbtree.cpp:54:1: error: syntax error [syntaxError]
+TEST(TestRbTree, empty)
+^
+deps/oblib/unittest/lib/coro/test_co_all.cpp:20:23: error: syntax error [syntaxError]
+  for (int64_t i = 0; i < 1 << 22; i++) {
+                      ^
+deps/oblib/unittest/lib/ec/test_ec_table_cache.cpp:42:1: error: syntax error [syntaxError]
+TEST_F(ObECTableCacheTest, TestBase)
+^
+deps/oblib/unittest/lib/ec/test_isal_erasure_code.cpp:395:1: error: syntax error [syntaxError]
+TEST_F(ObErasureCodeTest, testnormal)
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:835:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_NUMBER_TEST(xx, hash_xx);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:835:1: note: Address of variable taken here.
+DEF_NUMBER_TEST(xx, hash_xx);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:835:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_NUMBER_TEST(xx, hash_xx);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:836:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_NUMBER_TEST(murmur, hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:836:1: note: Address of variable taken here.
+DEF_NUMBER_TEST(murmur, hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:836:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_NUMBER_TEST(murmur, hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:837:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_NUMBER_TEST(wy, hash_wy);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:837:1: note: Address of variable taken here.
+DEF_NUMBER_TEST(wy, hash_wy);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:837:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_NUMBER_TEST(wy, hash_wy);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:839:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_VARCHAR_TEST(xx, varchar_xx_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:839:1: note: Address of variable taken here.
+DEF_VARCHAR_TEST(xx, varchar_xx_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:839:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_VARCHAR_TEST(xx, varchar_xx_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:840:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_VARCHAR_TEST(mysql, varchar_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:840:1: note: Address of variable taken here.
+DEF_VARCHAR_TEST(mysql, varchar_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:840:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_VARCHAR_TEST(mysql, varchar_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:841:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_VARCHAR_TEST(murmur, varchar_murmur_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:841:1: note: Address of variable taken here.
+DEF_VARCHAR_TEST(murmur, varchar_murmur_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:841:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_VARCHAR_TEST(murmur, varchar_murmur_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:842:1: warning: The address of local variable 'value64' might be accessed at non-zero index. [objectIndex]
+DEF_VARCHAR_TEST(wy, varchar_wy_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:842:1: note: Address of variable taken here.
+DEF_VARCHAR_TEST(wy, varchar_wy_hash);
+^
+deps/oblib/unittest/lib/hash/test_hash_algorithm_performance.cpp:842:1: note: The address of local variable 'value64' might be accessed at non-zero index.
+DEF_VARCHAR_TEST(wy, varchar_wy_hash);
+^
+deps/oblib/unittest/lib/hash/test_linear_hash_map.cpp:131:1: error: syntax error [syntaxError]
+TEST(ObLinearHashMap, EStest1)
+^
+deps/oblib/unittest/lib/io/aio_preload.c:124:7: error: Code 'this_routine::usleep' is invalid C code. Use --std or --language to configure the language. [syntaxError]
+      this_routine::usleep(10 * 1000 * 1000);  // sleep 10s
+      ^
+deps/oblib/unittest/lib/io/test_disk_error.cpp:129:1: error: syntax error [syntaxError]
+TEST_F(TestDiskError, io_submit_failed)
+^
+deps/oblib/unittest/lib/io/test_io_benchmark.cpp:63:1: error: syntax error [syntaxError]
+TEST_F(TestIOBenchmark, TestObIORunner)
+^
+deps/oblib/unittest/lib/io/test_io_manager.cpp:204:1: error: syntax error [syntaxError]
+TEST(ObIOQueue, simple)
+^
+deps/oblib/unittest/lib/io/test_io_performance.h:30:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(category), K_(size), K_(iops), K_(depth), K_(is_sequence))
+  ^
+deps/oblib/unittest/lib/json/test_json_print_utils.cpp:37:1: error: syntax error [syntaxError]
+TEST(TestStdJsonConvertor, all)
+^
+deps/oblib/unittest/lib/list/test_dlist.cpp:47:1: error: syntax error [syntaxError]
+TEST_F(TestObDList, encode_decode)
+^
+deps/oblib/unittest/lib/lock/test_bucket_lock.cpp:37:1: error: syntax error [syntaxError]
+TEST(ObBucketLock, succeed_rdlock_all)
+^
+deps/oblib/unittest/lib/lock/test_latch.cpp:122:1: error: There is an unknown macro here somewhere. Configuration is required. If DEFINE_HAS_MEMBER is a macro then please configure it. [unknownMacro]
+DEFINE_HAS_MEMBER(wr2rdlock)
+^
+deps/oblib/unittest/lib/lock/test_thread_cond.cpp:63:1: error: syntax error [syntaxError]
+TEST(ObThreadCond, normal)
+^
+deps/oblib/unittest/lib/oblog/test_base_log_writer.cpp:65:1: error: syntax error [syntaxError]
+TEST(ObBaseLogWriter, normal)
+^
+deps/oblib/unittest/lib/oblog/test_ob_log_obj.cpp:34:1: error: syntax error [syntaxError]
+TEST(ObLogPrintObj, basic_test)
+^
+deps/oblib/unittest/lib/oblog/test_ob_log_performance.cpp:213:1: error: syntax error [syntaxError]
+TEST_F(ObLoggerTest, DISABLED_performance_test)
+^
+deps/oblib/unittest/lib/random/test_mysql_random.cpp:27:1: error: syntax error [syntaxError]
+TEST_F(TestMysqlRandom, main_test)
+^
+deps/oblib/unittest/lib/resource/test_resource_mgr.cpp:201:1: error: syntax error [syntaxError]
+TEST(TestTenantMemoryMgr, sync_wash)
+^
+deps/oblib/unittest/lib/stat/test_diagnose_info.cpp:60:1: error: syntax error [syntaxError]
+TEST(ObDISessionCache, multithread)
+^
+deps/oblib/unittest/lib/string/test_fixed_length_string.cpp:49:1: error: syntax error [syntaxError]
+TEST(TestFixedLengthString, error)
+^
+deps/oblib/unittest/lib/task/test_timer.cpp:36:1: error: syntax error [syntaxError]
+TEST(TestTimer, timer_task)
+^
+deps/oblib/unittest/lib/test_fixed_array.cpp:49:1: error: syntax error [syntaxError]
+TEST(ObTestFiexedArray, push_back)
+^
+deps/oblib/unittest/lib/time/test_ob_time_utility.cpp:33:1: error: syntax error [syntaxError]
+TEST(TestCurrentMonotonicTime, common)
+^
+deps/oblib/unittest/lib/time/test_ob_tsc_timestamp.cpp:28:1: error: syntax error [syntaxError]
+TEST(TestObTscTimestamp, common)
+^
+deps/oblib/unittest/lib/wait_event/test_wait_event.cpp:37:1: error: syntax error [syntaxError]
+TEST(ObWaitEventStat, normal)
+^
+src/archive/ob_archive_task_queue.cpp:85:10: error: syntax error [syntaxError]
+  } else if OB_FAIL (queue_.pop(link)) {
+         ^
+src/archive/ob_log_archive_struct.cpp:373:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObArchiveIndexFileInfo)
+^
+src/clog/ob_log_flush_task.h:55:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(N_LOG_TYPE, log_type_, N_LOG_ID, log_id_, "submit_timestamp", submit_timestamp_, N_PARTITION_KEY,
+  ^
+src/clog/ob_buffer_arena.cpp:82:19: error: Pointer addition with NULL pointer. [nullPointerArithmetic]
+    ret_ptr = ptr + header_size_;
+                  ^
+src/clog/ob_buffer_arena.cpp:71:15: note: Assignment 'ptr=NULL', assigned value is 0
+  char* ptr = NULL;
+              ^
+src/clog/ob_buffer_arena.cpp:82:19: note: Null pointer addition
+    ret_ptr = ptr + header_size_;
+                  ^
+src/clog/ob_log_block.cpp:173:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObLogBlockMetaV2)
+^
+src/clog/ob_log_common.cpp:55:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLogInfo)
+^
+src/clog/ob_log_define.cpp:42:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObLogCursorExt)
+^
+src/clog/ob_log_entry.cpp:139:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObLogEntry)
+^
+src/clog/ob_log_entry_header.cpp:248:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObLogEntryHeader)
+^
+src/clog/ob_log_external_rpc.cpp:94:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLogReqStartLogIdByTsRequest)
+^
+src/clog/ob_log_file_trailer.cpp:94:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObLogFileTrailer)
+^
+src/clog/ob_log_req.cpp:29:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObPushLogReq)
+^
+src/clog/ob_log_rpc_proxy.cpp:41:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObLogRpcProxy::Buffer)
+^
+src/observer/ob_server_struct.cpp:179:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObGlobalContext)
+^
+src/observer/omt/ob_tenant.h:429:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(id), K_(compat_mode), K_(unit_min_cpu), K_(unit_max_cpu), K_(slice), K_(slice_remain), K_(token_cnt),
+  ^
+src/observer/omt/ob_tenant_config.cpp:335:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTenantConfig)
+^
+src/rootserver/ob_alloc_replica_strategy.cpp:1398:3: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+  FOR_BEGIN_END_E(replica_addr, partition, ts_.all_replica_, OB_SUCC(ret))
+  ^
+src/rootserver/ob_balance_info.cpp:2550:5: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+    FOR_BEGIN_END_E(r, *(*p), ts.all_replica_, OB_SUCCESS == ret)
+    ^
+src/rootserver/ob_locality_checker.cpp:296:7: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+      FOR_BEGIN_END_E(r, partition, tenant_stat_->all_replica_, OB_SUCC(ret))
+      ^
+src/rootserver/ob_migrate_unit.cpp:90:7: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+      FOR_BEGIN_END_E(r, *(*p), ts.all_replica_, OB_SUCCESS == ret)
+      ^
+src/rootserver/ob_partition_balancer.cpp:284:15: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+              FOR_BEGIN_END_E(pg, tg, ts.all_pg_, OB_SUCC(ret))
+              ^
+src/rootserver/ob_partition_group_coordinator.cpp:191:5: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+    FOR_BEGIN_END_E(ppr, primary_partition, ts.all_replica_, OB_SUCC(ret))
+    ^
+src/rootserver/ob_rereplication.cpp:146:5: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+    FOR_BEGIN_END(r, *(*p), ts.all_replica_)
+    ^
+src/rootserver/ob_root_balancer.cpp:1252:11: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+          FOR_BEGIN_END_E(r, *(*p), ts.all_replica_, OB_SUCCESS == ret)
+          ^
+src/rootserver/ob_root_utils.cpp:379:5: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+    FOR_BEGIN_END_E(pr, partition, ts.all_replica_, OB_SUCC(ret))
+    ^
+src/rootserver/ob_rs_job_table_operator.h:73:1: error: syntax error [syntaxError]
+BUILD_DML_ELEMENTS(1);
+^
+src/rootserver/ob_shrink_resource_pool_checker.cpp:199:5: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+    FOR_BEGIN_END_E(r, partition, tenant_stat_->all_replica_, OB_SUCCESS == ret)
+    ^
+src/rootserver/ob_single_zone_mode_migrate_replica.cpp:139:3: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+  FOR_BEGIN_END_E(pr, p, ts.all_replica_, OB_SUCC(ret))
+  ^
+src/rootserver/ob_unit_balancer.cpp:214:9: error: Syntax Error: AST broken, 'for' doesn't have two operands. [internalAstError]
+        FOR_BEGIN_END_E(r, *ts.sorted_partition_.at(pg->begin_), ts.all_replica_, OB_SUCC(ret))
+        ^
+src/rootserver/ob_zone_manager.cpp:1702:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObZoneManagerBase)
+^
+src/share/backup/ob_backup_archive_log_round_stat.cpp:472:28: error: Same iterator is used with different containers 'round_stat.tenant_pg_map_' and 'current_round_stat_.tenant_pg_map_'. [iterators2]
+        iter = round_stat->tenant_pg_map_->begin();
+                           ^
+src/share/backup/ob_backup_archive_log_round_stat.cpp:473:37: note: Same iterator is used with different containers 'round_stat.tenant_pg_map_' and 'current_round_stat_.tenant_pg_map_'.
+        for (; OB_SUCC(ret) && iter != current_round_stat_->tenant_pg_map_->end(); ++iter) {
+                                    ^
+src/share/backup/ob_backup_archive_log_round_stat.cpp:472:28: note: Same iterator is used with different containers 'round_stat.tenant_pg_map_' and 'current_round_stat_.tenant_pg_map_'.
+        iter = round_stat->tenant_pg_map_->begin();
+                           ^
+src/share/config/ob_common_config.cpp:115:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObCommonConfig)
+^
+src/share/config/ob_server_config.cpp:306:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObServerConfig)
+^
+src/share/datum/ob_datum_util.h:41:60: error: syntax error [syntaxError]
+typedef ObConstIntMapping<ObMaxTC, LST_DO(SELECT_TYPE_TC, (, ), OBJ_TYPE_TC_PAIRS)> ObObjTypeTCMap;
+                                                           ^
+src/share/ob_cascad_member_list.cpp:256:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObCascadMemberList)
+^
+src/share/ob_core_table_proxy.cpp:333:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObCoreTableProxy::Row)
+^
+src/share/ob_debug_sync.cpp:115:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDSActionArray)
+^
+src/share/ob_lease_struct.cpp:131:1: error: There is an unknown macro here somewhere. Configuration is required. If OB_SERIALIZE_MEMBER is a macro then please configure it. [unknownMacro]
+OB_SERIALIZE_MEMBER(ObLeaseRequest, version_, zone_, server_, inner_port_, build_version_, resource_info_,
+^
+src/share/ob_rpc_struct.h:2961:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(
+  ^
+src/share/ob_priv_common.cpp:644:3: error: syntax error [syntaxError]
+  OZ(array.push_back(0));
+  ^
+src/share/ob_proposal_id.cpp:72:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObProposalID)
+^
+src/share/ob_rpc_struct.cpp:2887:13: error: syntax error [syntaxError]
+  BASE_SER((, ObDDLArg));
+            ^
+src/share/ob_rs_mgr.cpp:316:3: error: syntax error [syntaxError]
+  if OB_FAIL (ret) {
+  ^
+src/share/ob_scanner.cpp:81:3: error: syntax error [syntaxError]
+  if OB_FAIL (ob_write_string(inner_allocator_, extend_info, extend_info_)) {
+  ^
+src/share/ob_tenant_mgr.cpp:46:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObTenantFreezeArg)
+^
+src/share/ob_zone_info.cpp:255:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObGlobalInfo)
+^
+src/share/object/ob_obj_cast.cpp:265:0: error: failed to expand 'SET_RES_DATETIME', Wrong number of parameters for macro 'SET_RES_OBJ'. [preprocessorErrorDirective]
+#define SET_RES_DATETIME(res) SET_RES_OBJ(res, datetime, expect_type, COMMA, value, ObTimeConverter::ZERO_DATETIME)
+^
+src/share/parameter/ob_parameter_attr.cpp:23:1: error: syntax error [syntaxError]
+DEF_ATTR_VALUES(Section, ROOT_SERVICE, LOAD_BALANCE, DAILY_MERGE, LOCATION_CACHE, SSTABLE, CLOG, CACHE, TRANS, TENANT,
+^
+src/share/partition_table/ob_persistent_partition_table.cpp:744:12: error: syntax error [syntaxError]
+    } else if OB_FAIL (proxy->set_original_leader(table_id, partition_id, is_original_leader)) {
+           ^
+src/share/rc/ob_tenant_base.cpp:27:75: error: syntax error [syntaxError]
+ObTenantBase::ObTenantBase(const int64_t id) : LST_DO2(CONSTRUCT_MEMBER, (, ), MTL_MEMBERS), id_(id), inited_(false)
+                                                                          ^
+src/share/rpc/ob_batch_proxy.cpp:38:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObBatchPacket)
+^
+src/share/schema/ob_column_schema.cpp:249:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObColumnSchemaV2)
+^
+src/share/schema/ob_constraint.cpp:113:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObConstraint)
+^
+src/share/schema/ob_dependency_info.cpp:385:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDependencyInfo)
+^
+src/share/schema/ob_error_info.h:120:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(tenant_id), K_(obj_id), K_(obj_type), K_(obj_seq), K_(line), K_(position), K_(text_length), K_(text),
+  ^
+src/share/schema/ob_schema_manager.cpp:108:71: error: Same iterator is used with different containers 'schema.max_used_table_id_map_' and 'max_used_table_id_map_'. [iterators2]
+    ObHashMap<uint64_t, uint64_t>::const_iterator const_iter = schema.max_used_table_id_map_.begin();
+                                                                      ^
+src/share/schema/ob_schema_manager.cpp:111:44: note: Same iterator is used with different containers 'schema.max_used_table_id_map_' and 'max_used_table_id_map_'.
+    for (; OB_SUCCESS == ret && const_iter != max_used_table_id_map_.end(); ++const_iter) {
+                                           ^
+src/share/schema/ob_schema_manager.cpp:108:71: note: Same iterator is used with different containers 'schema.max_used_table_id_map_' and 'max_used_table_id_map_'.
+    ObHashMap<uint64_t, uint64_t>::const_iterator const_iter = schema.max_used_table_id_map_.begin();
+                                                                      ^
+src/share/schema/ob_schema_service.cpp:310:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(AlterTableSchema)
+^
+src/share/schema/ob_schema_struct.cpp:6469:13: error: syntax error [syntaxError]
+  BASE_SER((, ObBasePartition));
+            ^
+src/share/schema/ob_table_dml_param.cpp:281:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableSchemaParam)
+^
+src/share/schema/ob_table_iter.h:36:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(is_inited), K_(cur_tenant_idx), K_(tenant_ids))
+  ^
+src/share/schema/ob_table_param.cpp:407:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObColumnParam)
+^
+src/share/schema/ob_table_schema.cpp:4362:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableSchema)
+^
+src/share/system_variable/ob_system_variable.cpp:686:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObBasicSysVar)
+^
+src/share/table/ob_table.cpp:730:41: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObTableBatchOperation,)
+                                        ^
+src/sql/code_generator/ob_static_engine_cg.cpp:2960:33: warning: Possible null pointer dereference: table_columns [nullPointer]
+  OZ(convert_update_assignments(table_columns->index_dml_infos_.at(0).column_exprs_,
+                                ^
+src/sql/code_generator/ob_static_engine_cg.cpp:2857:39: note: Assignment 'table_columns=NULL', assigned value is 0
+  const TableColumns* table_columns = NULL;
+                                      ^
+src/sql/code_generator/ob_static_engine_cg.cpp:2960:33: note: Null pointer dereference
+  OZ(convert_update_assignments(table_columns->index_dml_infos_.at(0).column_exprs_,
+                                ^
+src/sql/code_generator/ob_static_engine_cg.cpp:2961:7: warning: Possible null pointer dereference: table_columns [nullPointer]
+      table_columns->index_dml_infos_.at(0).assignments_,
+      ^
+src/sql/code_generator/ob_static_engine_cg.cpp:2857:39: note: Assignment 'table_columns=NULL', assigned value is 0
+  const TableColumns* table_columns = NULL;
+                                      ^
+src/sql/code_generator/ob_static_engine_cg.cpp:2961:7: note: Null pointer dereference
+      table_columns->index_dml_infos_.at(0).assignments_,
+      ^
+src/sql/dtl/ob_dtl_linked_buffer.h:344:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDtlLinkedBuffer, OB_INLINE)
+^
+src/sql/engine/aggregate/ob_aggregate_processor.cpp:53:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObAggrInfo)
+^
+src/sql/engine/aggregate/ob_groupby.cpp:206:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObGroupBy)
+^
+src/sql/engine/aggregate/ob_groupby_op.cpp:29:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObGroupBySpec)
+^
+src/sql/engine/aggregate/ob_hash_groupby_op.cpp:27:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObHashGroupBySpec)
+^
+src/sql/engine/aggregate/ob_merge_groupby_op.cpp:24:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObMergeGroupBySpec)
+^
+src/sql/engine/basic/ob_chunk_datum_store.cpp:2044:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObChunkDatumStore)
+^
+src/sql/engine/basic/ob_chunk_row_store.cpp:1714:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObChunkRowStore)
+^
+src/sql/engine/basic/ob_count.cpp:248:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObCount)
+^
+src/sql/engine/basic/ob_expr_values.cpp:491:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObExprValues)
+^
+src/sql/engine/basic/ob_expr_values_op.cpp:91:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE_SIZE(ObExprValuesSpec)
+^
+src/sql/engine/basic/ob_expr_values_with_child.cpp:276:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObExprValuesWithChild)
+^
+src/sql/engine/basic/ob_limit.cpp:483:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLimit)
+^
+src/sql/engine/basic/ob_pushdown_filter.cpp:435:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPushdownFilter)
+^
+src/sql/engine/basic/ob_temp_table_access.cpp:107:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTempTableAccessInput)
+^
+src/sql/engine/basic/ob_temp_table_access_op.cpp:117:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTempTableAccessOpInput)
+^
+src/sql/engine/basic/ob_temp_table_insert.cpp:73:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTempTableInsertInput)
+^
+src/sql/engine/basic/ob_temp_table_insert_op.cpp:76:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTempTableInsertOpInput)
+^
+src/sql/engine/basic/ob_topk.cpp:315:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTopK)
+^
+src/sql/engine/cmd/ob_load_data_rpc.cpp:601:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLoadbuffer)
+^
+src/sql/engine/connect_by/ob_nested_loop_connect_by.cpp:229:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObConnectByBase)
+^
+src/sql/engine/connect_by/ob_nested_loop_connect_by_with_index.cpp:455:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE_SIZE(ObConnectByWithIndex)
+^
+src/sql/engine/dml/ob_table_conflict_row_fetcher.cpp:32:3: error: syntax error [syntaxError]
+  ARRAY_FOREACH(part_conflict_rows_, i)
+  ^
+src/sql/engine/dml/ob_table_conflict_row_fetcher_op.cpp:36:3: error: syntax error [syntaxError]
+  ARRAY_FOREACH(part_conflict_rows_, i)
+  ^
+src/sql/engine/dml/ob_table_insert_returning.cpp:193:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableInsertReturning)
+^
+src/sql/engine/dml/ob_table_insert_up.cpp:104:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableInsertUp)
+^
+src/sql/engine/dml/ob_table_lock.cpp:321:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableLock)
+^
+src/sql/engine/dml/ob_table_merge.cpp:774:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableMerge)
+^
+src/sql/engine/dml/ob_table_modify.cpp:353:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableModify)
+^
+src/sql/engine/dml/ob_table_modify_op.cpp:252:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableModifySpec)
+^
+src/sql/engine/dml/ob_table_update.cpp:537:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableUpdate)
+^
+src/sql/engine/dml/ob_table_update_returning.cpp:147:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableUpdateReturning)
+^
+src/sql/engine/expr/ob_expr.cpp:38:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObEvalInfo)
+^
+src/sql/engine/expr/ob_expr_cast.cpp:869:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObExprCast)
+^
+src/sql/engine/expr/ob_expr_dll_udf.cpp:203:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObExprDllUdf)
+^
+src/sql/engine/expr/ob_expr_like.cpp:606:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObExprLike)
+^
+src/sql/engine/expr/ob_expr_make_set.cpp:50:5: error: syntax error [syntaxError]
+    if OB_FAIL (aggregate_charsets_for_string_result(type, &types[1], param_num - 1, type_ctx.get_coll_type())) {
+    ^
+src/sql/engine/expr/ob_expr_quote.cpp:48:5: error: syntax error [syntaxError]
+    if OB_FAIL (aggregate_charsets_for_string_result(type, &type1, 1, type_ctx.get_coll_type())) {
+    ^
+src/sql/engine/expr/ob_infix_expression.cpp:39:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObInfixExprItem)
+^
+src/sql/engine/expr/ob_postfix_expression.cpp:195:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObPostExprItem)
+^
+src/sql/engine/expr/ob_sql_expression.cpp:189:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObSqlExpression)
+^
+src/sql/engine/join/ob_basic_nested_loop_join.cpp:225:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObBasicNestedLoopJoin)
+^
+src/sql/engine/join/ob_join.cpp:548:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObJoin)
+^
+src/sql/engine/ob_des_exec_context.cpp:127:1: error: syntax error [syntaxError]
+DEFINE_DESERIALIZE(ObDesExecContext)
+^
+src/sql/engine/ob_exec_context.cpp:1076:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObExecContext)
+^
+src/sql/engine/ob_operator.cpp:99:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObOpSpec)
+^
+src/sql/engine/ob_phy_operator.cpp:312:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPhyOperator)
+^
+src/sql/engine/ob_physical_plan.cpp:894:1: error: syntax error [syntaxError]
+DEF_TO_STRING(FlashBackQueryItem)
+^
+src/sql/engine/ob_physical_plan_ctx.cpp:467:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPhysicalPlanCtx)
+^
+src/sql/engine/ob_serializable_function.cpp:35:63: error: syntax error [syntaxError]
+  bool all_reg_flags[] = {LST_DO(LIST_REGISTERED_FUNC_ARRAY, (, ), SER_FUNC_ARRAY_ID_ENUM)};
+                                                              ^
+src/sql/engine/pdml/ob_px_multi_part_insert.cpp:289:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPxMultiPartInsert)
+^
+src/sql/engine/px/ob_granule_iterator.cpp:83:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObGIInput)
+^
+src/sql/engine/px/ob_granule_iterator_op.cpp:89:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObGIOpInput)
+^
+src/sql/engine/px/ob_light_granule_iterator.cpp:111:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLGIInput)
+^
+src/sql/engine/px/ob_px_dtl_msg.h:68:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(row_match_count), K_(row_duplicated_count), K_(row_deleted_count))
+  ^
+src/sql/engine/px/ob_px_sqc_handler.h:45:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(start_worker_count), K_(finish_worker_count), K_(expect_worker_count), K_(tid_array))
+  ^
+src/sql/engine/recursive_cte/ob_recursive_union_all.cpp:196:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObRecursiveUnionAll)
+^
+src/sql/engine/set/ob_merge_set_operator.cpp:261:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObMergeSetOperator)
+^
+src/sql/engine/sort/ob_sort.cpp:581:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObSort)
+^
+src/sql/engine/subquery/ob_subplan_filter.cpp:301:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObSubPlanFilter)
+^
+src/sql/engine/subquery/ob_subplan_filter_op.cpp:111:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObSubPlanFilterSpec)
+^
+src/sql/engine/table/ob_domain_index.cpp:488:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDomainIndex)
+^
+src/sql/engine/table/ob_link_scan.cpp:331:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLinkScan)
+^
+src/sql/engine/table/ob_multi_part_table_scan.cpp:30:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ObMultiPartTableScanInput)
+^
+src/sql/engine/table/ob_table_lookup.cpp:455:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObLookupInfo)
+^
+src/sql/engine/table/ob_table_partition_ranges.cpp:23:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPartitionScanRanges)
+^
+src/sql/engine/table/ob_table_row_store.cpp:47:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableRowStoreInput)
+^
+src/sql/engine/table/ob_table_row_store_op.cpp:49:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableRowStoreOpInput)
+^
+src/sql/engine/table/ob_table_scan.cpp:157:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTableScanInput)
+^
+src/sql/engine/table/ob_table_scan_op.cpp:48:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE_SIZE(ObTableScanOpInput)
+^
+src/sql/engine/window_function/ob_window_function.cpp:83:1: error: syntax error [syntaxError]
+OB_DEF_DESERIALIZE(ExtBound)
+^
+src/sql/engine/window_function/ob_window_function_op.cpp:42:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObWindowFunctionSpec)
+^
+src/sql/executor/ob_determinate_task_transmit.cpp:59:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDeterminateTaskTransmit)
+^
+src/sql/executor/ob_distributed_transmit.cpp:547:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObDistributedTransmit)
+^
+src/sql/executor/ob_job_control.cpp:429:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObJobControl)
+^
+src/sql/executor/ob_task.cpp:54:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTask)
+^
+src/sql/executor/ob_task_event.cpp:213:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObShuffleKey)
+^
+src/sql/executor/ob_transmit.cpp:238:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTransmit)
+^
+src/sql/monitor/ob_phy_operator_monitor_info.cpp:199:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPhyOperatorMonitorInfo)
+^
+src/sql/ob_index_sstable_builder.cpp:196:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObIndexSSTableBuilder::BuildParam)
+^
+src/sql/ob_phy_table_location.cpp:48:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObPhyTableLocation)
+^
+src/sql/optimizer/ob_log_plan.cpp:2265:54: error: Iterator 'candidate_server_list_iter' used after element has been erased. [eraseDereference]
+              if (OB_FAIL(candidate_server_list.erase(candidate_server_list_iter))) {
+                                                     ^
+src/sql/optimizer/ob_log_plan.cpp:2255:11: note: Iterator 'candidate_server_list_iter' used after element has been erased.
+          for (; OB_SUCC(ret) && candidate_server_list_iter != candidate_server_list.end();
+          ^
+src/sql/optimizer/ob_log_plan.cpp:2265:54: note: Iterator 'candidate_server_list_iter' used after element has been erased.
+              if (OB_FAIL(candidate_server_list.erase(candidate_server_list_iter))) {
+                                                     ^
+src/sql/optimizer/ob_route_policy.cpp:290:54: error: Iterator 'intersect_server_list_iter' used after element has been erased. [eraseDereference]
+              if (OB_FAIL(intersect_server_list.erase(intersect_server_list_iter))) {
+                                                     ^
+src/sql/optimizer/ob_route_policy.cpp:267:11: note: Iterator 'intersect_server_list_iter' used after element has been erased.
+          for (; OB_SUCC(ret) && intersect_server_list_iter != intersect_server_list.end();
+          ^
+src/sql/optimizer/ob_route_policy.cpp:290:54: note: Iterator 'intersect_server_list_iter' used after element has been erased.
+              if (OB_FAIL(intersect_server_list.erase(intersect_server_list_iter))) {
+                                                     ^
+../../../src/sql/parser/sql_parser_mysql_mode_lex.c:76990:12: warning: Possible null pointer dereference: yyg [nullPointer]
+
+           ^
+../../../src/sql/parser/sql_parser_mysql_mode_lex.c:77167:83: note: Calling function 'obsql_mysql_yyalloc', 2nd argument 'NULL' value is 0
+
+                                                                                  ^
+../../../src/sql/parser/sql_parser_mysql_mode.l:1478:44: note: Calling function 'obsql_mysql_yyget_extra', 1st argument 'yyscanner' value is 0
+
+                                           ^
+../../../src/sql/parser/sql_parser_mysql_mode_lex.c:76989:29: note: Assignment 'yyg=(struct yyguts_t*)yyscanner', assigned value is 0
+
+                            ^
+../../../src/sql/parser/sql_parser_mysql_mode_lex.c:76990:12: note: Null pointer dereference
+
+           ^
+src/sql/rewrite/ob_key_part.cpp:314:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObKeyPart)
+^
+src/sql/rewrite/ob_query_range.cpp:4519:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObQueryRange)
+^
+src/sql/rewrite/ob_transform_utils.cpp:2322:5: error: syntax error [syntaxError]
+    if OB_FAIL (SMART_CALL(
+    ^
+src/sql/session/ob_basic_session_info.cpp:2771:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObBasicSessionInfo::SysVarsCacheData)
+^
+src/storage/blocksstable/ob_data_buffer.h:127:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObBufferHolder)
+^
+src/storage/blocksstable/ob_bloom_filter_cache.cpp:278:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObBloomFilterCacheValue)
+^
+src/storage/blocksstable/ob_fuse_row_cache.cpp:179:35: warning: Possible null pointer dereference: pfuse_value->obj_array_ [nullPointer]
+      ObObj& dst_obj = pfuse_value->obj_array_[i];
+                                  ^
+src/storage/blocksstable/ob_fuse_row_cache.cpp:164:31: note: pfuse_value->obj_array_ is assigned value 0
+      pfuse_value->obj_array_ = nullptr;
+                              ^
+src/storage/blocksstable/ob_fuse_row_cache.cpp:179:35: note: Null pointer dereference
+      ObObj& dst_obj = pfuse_value->obj_array_[i];
+                                  ^
+src/storage/blocksstable/ob_macro_block_id.cpp:196:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(MacroBlockId)
+^
+src/storage/blocksstable/ob_micro_block_cache.cpp:172:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObMultiBlockIOParam)
+^
+src/storage/blocksstable/slog/ob_storage_log_struct.cpp:124:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(ObBaseStorageLogBuffer)
+^
+src/storage/ob_dml_param.cpp:181:1: error: syntax error [syntaxError]
+DEF_TO_STRING(ObRow2ExprsProjector::Item)
+^
+src/storage/ob_partition_base_data_physical_restore.h:302:3: error: There is an unknown macro here somewhere. Configuration is required. If TO_STRING_KV is a macro then please configure it. [unknownMacro]
+  TO_STRING_KV(K_(table_id), K_(backup_index_id), K_(backup_path_info))
+  ^
+src/storage/ob_saved_storage_info_v2.cpp:36:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE_SIZE(ObSavedStorageInfoV2)
+^
+src/storage/ob_warm_up_request.cpp:185:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObIWarmUpReadRequest)
+^
+src/storage/transaction/ob_trans_define.cpp:3077:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTransDesc)
+^
+src/storage/transaction/ob_trans_log.cpp:185:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(ObTransMutator)
+^
+unittest/archive/test_archive_task.cpp:128:1: error: syntax error [syntaxError]
+TEST(TestObArchiveTask, smoke_test)
+^
+unittest/clog/test_base.cpp:28:1: error: Unmatched '}'. Configuration: ''. [syntaxError]
+}
+^
+unittest/clog/test_clog_writer.cpp:221:1: error: syntax error [syntaxError]
+TEST_F(TestCLogWriter, normal)
+^
+unittest/clog/test_get_role.cpp:50:1: error: syntax error [syntaxError]
+TEST(test_get_role, test1)
+^
+unittest/clog/test_info_block_handler.cpp:42:1: error: syntax error [syntaxError]
+TEST_F(ObInfoBlockHandlerTest, commit_info_block_handler)
+^
+unittest/clog/test_log_callback_engine.cpp:160:1: error: syntax error [syntaxError]
+TEST_F(ObTestLogCallback, init_test)
+^
+unittest/clog/test_log_checksum_V2.cpp:39:1: error: syntax error [syntaxError]
+TEST_F(TestObLogChecksum, init_test)
+^
+unittest/clog/test_log_ext_ring_buffer.cpp:105:1: error: syntax error [syntaxError]
+TEST(RINGBUFFER_BASE, debug3)
+^
+unittest/clog/test_log_reconfirm.cpp:227:1: error: syntax error [syntaxError]
+TEST_F(TestReconfirm, reconfirm_test)
+^
+unittest/clog/test_log_task.cpp:96:1: error: syntax error [syntaxError]
+TEST_F(ObLogTaskTest, init_reset_destroy_test)
+^
+unittest/clog/test_ob_index_entry.cpp:60:1: error: syntax error [syntaxError]
+TEST_F(TestObIndexEntry, test_member_function)
+^
+unittest/clog/test_ob_log_block.cpp:40:1: error: syntax error [syntaxError]
+TEST_F(TestObLogBlock, test_just_one_block)
+^
+unittest/clog/test_ob_log_block_meta_v2.cpp:34:1: error: syntax error [syntaxError]
+TEST_F(TestObLogBlockMetaV2, normal)
+^
+unittest/clog/test_ob_log_broadcast_info_mgr.cpp:90:1: error: syntax error [syntaxError]
+TEST_F(ObLogBroadcastInfoMgrTest, test1)
+^
+unittest/clog/test_ob_log_cache.cpp:27:1: error: syntax error [syntaxError]
+TEST_F(TestObLogCache, smoke_test)
+^
+unittest/clog/test_ob_log_direct_reader.cpp:104:1: error: syntax error [syntaxError]
+TEST_F(TestObLogDirectReader, read_from_io)
+^
+unittest/clog/test_ob_log_entry.cpp:68:1: error: syntax error [syntaxError]
+TEST_F(TestObLogEntry, test_entry_copy)
+^
+unittest/clog/test_ob_log_entry_header.cpp:29:1: error: syntax error [syntaxError]
+TEST_F(TestObLogEntryHeader, test_ob_log_entry_header)
+^
+unittest/clog/test_ob_log_file_pool.cpp:109:1: error: syntax error [syntaxError]
+TEST_F(TestObLogFilePool, test_ob_dir)
+^
+unittest/clog/test_ob_log_file_trailer.cpp:31:1: error: syntax error [syntaxError]
+TEST_F(TestObLogFileTrailer, test_ob_log_file_trailer)
+^
+unittest/clog/test_ob_log_partition_meta_reader.cpp:235:1: error: syntax error [syntaxError]
+TEST_F(TestObLogPartitionMetaReader, test_read_partition_meta)
+^
+unittest/clog/test_ob_log_writer.cpp:719:1: error: Unmatched '}'. Configuration: ''. [syntaxError]
+}
+^
+unittest/clog/test_ob_raw_entry_iterator.cpp:390:1: error: syntax error [syntaxError]
+TEST_F(TestObRawLogIterator, test_read_data)
+^
+unittest/election/test_election_async_log.cpp:36:1: error: syntax error [syntaxError]
+TEST_F(TestElectionAsyncLog, logfile_open_close)
+^
+unittest/election/test_election_base.cpp:37:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionBase, get_self_addr)
+^
+unittest/election/test_election_cluster.cpp:264:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionCluster, test_get_leader)
+^
+unittest/election/test_election_group_cache.cpp:89:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionGroupCache, normal_test)
+^
+unittest/election/test_election_mem_stat.cpp:39:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionMemStat, init_and_destory)
+^
+unittest/election/test_election_mgr.cpp:94:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionMgr, init_two_and_stop)
+^
+unittest/election/test_election_msg.cpp:67:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionMsg, DePrepare)
+^
+unittest/election/test_election_msg_pool.cpp:86:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionMsgPool, store_de_prepare)
+^
+unittest/election/test_election_priority.cpp:83:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionPriority, normal_decentrialize_msg)
+^
+unittest/election/test_election_rpc.cpp:79:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionRpc, post_election_deprepare_msg)
+^
+unittest/election/test_election_timer.cpp:114:1: error: syntax error [syntaxError]
+TEST_F(TestObElectionTimer, timer_init_stop)
+^
+unittest/observer/tableapi/test_tableapi.cpp:163:1: error: syntax error [syntaxError]
+TEST_F(TestTableApi, entity_factory)
+^
+unittest/observer/test_information_schema.cpp:176:1: error: syntax error [syntaxError]
+TEST_F(TestInformationSchemaService, show_database_status)
+^
+unittest/rootserver/test_bootstrap.cpp:454:1: error: syntax error [syntaxError]
+TEST_F(TestBootstrap, construct_all_schema)
+^
+unittest/rootserver/test_multi_cluster_manager.cpp:46:1: error: syntax error [syntaxError]
+TEST_F(TestMultiClusterManager_load_Test, jsontocluster)
+^
+unittest/rootserver/test_recovery_helper.cpp:268:1: error: syntax error [syntaxError]
+TEST_F(TestRecoveryHelper, test_member_list)
+^
+unittest/share/cache/test_cache_utils.cpp:98:1: error: syntax error [syntaxError]
+TEST(TestFreeHeap, basic)
+^
+unittest/share/cache/test_cache_working_set.cpp:70:1: error: syntax error [syntaxError]
+TEST_F(TestCacheWorkingSet, basic)
+^
+unittest/share/cache/test_kv_storecache.cpp:78:1: error: syntax error [syntaxError]
+TEST(ObKVCacheInstMap, normal)
+^
+unittest/share/cache/test_working_set_mgr.cpp:82:1: error: syntax error [syntaxError]
+TEST(TestWorkingSetList, common)
+^
+unittest/share/client_feedback/test_client_feedback.cpp:28:1: error: syntax error [syntaxError]
+TEST(ObPartitionInfo, common)
+^
+unittest/share/partition_table/test_inmemory_partition_table.cpp:36:1: error: syntax error [syntaxError]
+TEST(TestInMemoryPartitionTable, common)
+^
+unittest/share/partition_table/test_location_update_task.cpp:152:1: error: syntax error [syntaxError]
+TEST_F(TestLocationUpdateTask, basic)
+^
+unittest/share/partition_table/test_partition_info.cpp:25:1: error: syntax error [syntaxError]
+TEST(ObPartitionInfo, common)
+^
+unittest/share/partition_table/test_partition_location.cpp:22:1: error: syntax error [syntaxError]
+TEST(ObPartitionLocation, common)
+^
+unittest/share/partition_table/test_partition_location_cache.cpp:553:1: error: syntax error [syntaxError]
+TEST_F(TestPartitionLocationCache, init)
+^
+unittest/share/partition_table/test_partition_location_cache_2.cpp:454:1: error: syntax error [syntaxError]
+TEST_F(TestPartitionLocationCache, check_non_paxos_replica)
+^
+unittest/share/partition_table/test_partition_table_iterator.cpp:566:1: error: syntax error [syntaxError]
+TEST_F(TestPartitionTableIterator, table_partition_iterator_v2)
+^
+unittest/share/partition_table/test_partition_table_operator.cpp:77:1: error: syntax error [syntaxError]
+TEST_F(TestPartitionTableOperator, common)
+^
+unittest/share/partition_table/test_persistent_partition_table.cpp:182:1: error: syntax error [syntaxError]
+TEST_F(TestPersistentPartitionTable, core_kv_batch_remove_replica)
+^
+unittest/share/partition_table/test_replica_filter.cpp:26:1: error: syntax error [syntaxError]
+TEST(TestReplicaFilter, filters)
+^
+unittest/share/partition_table/test_rpc_partition_table.cpp:107:1: error: syntax error [syntaxError]
+TEST_F(TestRpcPartitionTable, not_init)
+^
+unittest/share/redolog/test_log_disk_manager.cpp:48:1: error: syntax error [syntaxError]
+TEST_F(TestLogDiskMgr, simple)
+^
+unittest/share/redolog/test_log_file_store.cpp:67:1: error: syntax error [syntaxError]
+TEST_F(TestLogFileStore, simple)
+^
+unittest/share/scheduler/test_dag_scheduler.cpp:731:1: error: syntax error [syntaxError]
+TEST_F(TestDagScheduler, test_init)
+^
+unittest/share/schema/test_ddl.cpp:1675:5: error: Using 'memset' on struct that contains a 'std::vector'. [memsetClass]
+    memset(&clp, 0, sizeof(clp));
+    ^
+unittest/share/schema/test_ddl.cpp:542:9: error: Null pointer dereference: (ObLeaderCoordinator*)NULL [nullPointer]
+      *((ObLeaderCoordinator*)NULL),
+        ^
+unittest/share/schema/test_ddl.cpp:543:9: error: Null pointer dereference: (ObZoneManager*)NULL [nullPointer]
+      *((ObZoneManager*)NULL),
+        ^
+unittest/share/schema/test_ddl.cpp:544:9: error: Null pointer dereference: (ObEmptyServerChecker*)NULL [nullPointer]
+      *((ObEmptyServerChecker*)NULL),
+        ^
+unittest/share/schema/test_ddl.cpp:545:9: error: Null pointer dereference: (ObRebalanceTaskMgr*)NULL [nullPointer]
+      *((ObRebalanceTaskMgr*)NULL),
+        ^
+unittest/share/schema/test_ddl.cpp:546:9: error: Null pointer dereference: (ObSrvRpcProxy*)NULL [nullPointer]
+      *((ObSrvRpcProxy*)NULL),
+        ^
+unittest/share/schema/test_ddl.cpp:547:9: error: Null pointer dereference: (ObRestoreCtx*)NULL [nullPointer]
+      *((ObRestoreCtx*)NULL),
+        ^
+unittest/share/schema/test_ddl.cpp:987:33: error: Null pointer dereference: index_schema [nullPointer]
+  do_print_single_table_schema(*index_schema, of_tmp);
+                                ^
+unittest/share/schema/test_ddl.cpp:983:39: note: Assignment 'index_schema=NULL', assigned value is 0
+  const ObTableSchema* index_schema = NULL;
+                                      ^
+unittest/share/schema/test_ddl.cpp:987:33: note: Null pointer dereference
+  do_print_single_table_schema(*index_schema, of_tmp);
+                                ^
+unittest/share/schema/test_fallback_schema_mgr.cpp:31:1: error: syntax error [syntaxError]
+TEST_F(TestFallbackSchemaMgr, fallback_schema_for_liboblog)
+^
+unittest/share/schema/test_outline_info.cpp:81:1: error: syntax error [syntaxError]
+TEST(ObSchemaStructTest, test_deep_copy_outline_info)
+^
+unittest/share/schema/test_outline_mgr.cpp:45:1: error: syntax error [syntaxError]
+TEST_F(TestOutlineMgr, basic_interface)
+^
+unittest/share/schema/test_part_mg.cpp:40:1: error: syntax error [syntaxError]
+TEST(ObPartMgrUnit, basic_test)
+^
+unittest/share/schema/test_priv_mgr.cpp:57:1: error: syntax error [syntaxError]
+TEST_F(TestPrivMgr, privs_test)
+^
+unittest/share/schema/test_schema_cache.cpp:222:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaCache, schema_key)
+^
+unittest/share/schema/test_schema_getter_guard.cpp:103:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaGettGuard, not_use_local_cache_when_iter)
+^
+unittest/share/schema/test_schema_mem_mgr.cpp:30:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaMemMgr, basic_test)
+^
+unittest/share/schema/test_schema_mgr.cpp:67:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaMgr, init)
+^
+unittest/share/schema/test_schema_mgr_cache.cpp:132:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaMgrCache, multithread_put_and_get)
+^
+unittest/share/schema/test_schema_service.cpp:44:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaService, ColumnSchema_test)
+^
+unittest/share/schema/test_schema_service_rpc_proxy.cpp:212:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaServiceRpcProxy, TestGetLatestSchemaVersionP)
+^
+unittest/share/schema/test_schema_struct.cpp:1229:1: error: syntax error [syntaxError]
+TEST(ObTablePartitionKeyIter, partition_key_iter_v2)
+^
+unittest/share/schema/test_schema_utils.cpp:44:1: error: syntax error [syntaxError]
+TEST_F(TestSchemaUtils, UNDER_SYS_TENANT)
+^
+unittest/share/schema/test_server_schema_service.cpp:41:1: error: syntax error [syntaxError]
+TEST_F(TestServerSchemaService, AllSchemaKey)
+^
+unittest/share/schema/test_table_iter.cpp:39:1: error: syntax error [syntaxError]
+TEST_F(TestTableIterator, init)
+^
+unittest/share/schema/test_table_schema.cpp:26:1: error: syntax error [syntaxError]
+TEST(ObTableSchemaTest, convert_column_type_to_str_test)
+^
+unittest/share/test_alive_server_tracer.cpp:29:1: error: syntax error [syntaxError]
+TEST(TestAliveServerMap, all)
+^
+unittest/share/test_all_cluster_proxy.cpp:44:1: error: syntax error [syntaxError]
+TEST_F(TestAllClusterProxy, update_and_load)
+^
+unittest/share/test_async_task_queue.cpp:53:1: error: syntax error [syntaxError]
+TEST(TestAsyncTaskQueue, init)
+^
+unittest/share/test_cluster_id_hash_conflict.cpp:37:1: error: syntax error [syntaxError]
+TEST(test_cluster_id_hash_conflict, test_cluster_id_hash)
+^
+unittest/share/test_core_table_proxy.cpp:120:1: error: syntax error [syntaxError]
+TEST_F(TestCoreTableProxy, load)
+^
+unittest/share/test_datum_cmp.cpp:60:1: error: syntax error [syntaxError]
+TEST(ObTestDatumCmp, defined_nullsafe_func_by_type)
+^
+unittest/share/test_debug_sync.cpp:31:1: error: syntax error [syntaxError]
+TEST(common, ObDebugSyncAction)
+^
+unittest/share/test_di_perf.cpp:524:1: error: syntax error [syntaxError]
+TEST_F(TestDIPerf, common)
+^
+unittest/share/test_dml_sql_splicer.cpp:24:1: error: syntax error [syntaxError]
+TEST(ObDMLSqlSplicer, splice)
+^
+unittest/share/test_global_stat_proxy.cpp:44:1: error: syntax error [syntaxError]
+TEST_F(TestGlobalStatProxy, common)
+^
+unittest/share/test_inner_config_root_addr.cpp:50:1: error: syntax error [syntaxError]
+TEST_F(TestInnerConfigRootAddr, fetch)
+^
+unittest/share/test_latch.cpp:100:1: error: syntax error [syntaxError]
+TEST(ObLatch, invalid)
+^
+unittest/share/test_lease_struct.cpp:84:1: error: syntax error [syntaxError]
+TEST_F(TestLeaseStruct, ObServerResourceInfo)
+^
+unittest/share/test_locality_priority.cpp:83:1: error: syntax error [syntaxError]
+TEST_F(TestLocalityPriority, get_region_priority_primary_three_region)
+^
+unittest/share/test_obj_cast.cpp:39:1: error: syntax error [syntaxError]
+TEST_F(TestObjCast, test_number_range_check_mysql_old)
+^
+unittest/share/test_primary_zone_util.cpp:37:1: error: syntax error [syntaxError]
+TEST_F(TestPrimaryZoneUtil, single_zone)
+^
+unittest/share/test_reentrant_thread.cpp:42:1: error: syntax error [syntaxError]
+TEST(TestReentrantThread, all)
+^
+unittest/share/test_rpc_struct.cpp:37:1: error: syntax error [syntaxError]
+TEST(TestRPCStruct, print_size)
+^
+unittest/share/test_rs_mgr.cpp:123:1: error: syntax error [syntaxError]
+TEST_F(TestRsMgr, common)
+^
+unittest/share/test_time_zone_info_manager.cpp:44:1: error: syntax error [syntaxError]
+TEST(test_time_zone_info_manager, str_to_digit_with_date)
+^
+unittest/share/test_unit_getter.cpp:87:1: error: syntax error [syntaxError]
+TEST_F(TestUnitGetter, basic)
+^
+unittest/share/test_web_service_root_addr.cpp:126:1: error: syntax error [syntaxError]
+TEST_F(TestWebServiceRootAddr, store)
+^
+unittest/share/test_web_service_root_addr2.cpp:86:1: error: syntax error [syntaxError]
+TEST_F(TestWebServiceRootAddr, fetch_version2)
+^
+unittest/share/test_zone_info.cpp:52:1: error: syntax error [syntaxError]
+TEST_F(TestZoneInfo, create_global_info)
+^
+unittest/sql/code_generator/test_code_generator.cpp:245:1: error: syntax error [syntaxError]
+TEST_F(TestCodeGenerator, basic_test)
+^
+unittest/sql/code_generator/test_static_engine_cg.cpp:241:1: error: syntax error [syntaxError]
+TEST_F(TestCodeGenerator, basic_test)
+^
+unittest/sql/common/test_base64_encode.cpp:32:1: error: syntax error [syntaxError]
+TEST_F(TestBase64Encoder, str_encode)
+^
+unittest/sql/common/test_ob_end_trans_callback.cpp:45:1: error: syntax error [syntaxError]
+TEST_F(ObEndTransCallbacksTest, signal_wait)
+^
+unittest/sql/common/test_ob_sql_utils.cpp:40:1: error: syntax error [syntaxError]
+TEST_F(ObSQLUtilsTest, make_field_name)
+^
+unittest/sql/common/test_rowkey.cpp:32:1: error: syntax error [syntaxError]
+TEST_F(TestRowkey, test_serialize)
+^
+unittest/sql/common/test_urowid.cpp:343:1: error: syntax error [syntaxError]
+TEST(TestURowID, single_urowid_test)
+^
+unittest/sql/engine/aggregate/test_hash_distinct.cpp:351:1: error: syntax error [syntaxError]
+TEST_F(TestHashDistinctTest, test_big_data00)
+^
+unittest/sql/engine/basic/test_chunk_datum_store.cpp:308:1: error: syntax error [syntaxError]
+TEST_F(TestChunkDatumStore, basic)
+^
+unittest/sql/engine/basic/test_chunk_row_store.cpp:273:1: error: syntax error [syntaxError]
+TEST_F(TestChunkRowStore, basic)
+^
+unittest/sql/engine/basic/test_ra_row_store.cpp:160:1: error: syntax error [syntaxError]
+TEST_F(TestRARowStore, basic)
+^
+unittest/sql/engine/basic/test_ra_row_store_projector.cpp:22:1: error: syntax error [syntaxError]
+TEST(RARowStore, keep_projector)
+^
+unittest/sql/engine/dml/test_insert_up.cpp:32:1: error: syntax error [syntaxError]
+TEST_F(TestInsertUp, test_reset)
+^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:178:3: error: Array 'param[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "sdsada", varchar, "3234sdda", varchar, "4324sawsd");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:178:3: error: Array 'param[3]' accessed at index 4, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "sdsada", varchar, "3234sdda", varchar, "4324sawsd");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:180:3: error: Array 'param[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "", varchar, "43534534", varchar, "fdgsawsd");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:180:3: error: Array 'param[3]' accessed at index 4, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "", varchar, "43534534", varchar, "fdgsawsd");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:182:3: error: Array 'param[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "", varchar, "", varchar, "");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:182:3: error: Array 'param[3]' accessed at index 4, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "", varchar, "", varchar, "");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:184:3: error: Array 'param[3]' accessed at index 3, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "sds", varchar, "242%4", varchar, "^7dfs");
+  ^
+unittest/sql/engine/expr/ob_expr_concat_ws_test.cpp:184:3: error: Array 'param[3]' accessed at index 4, which is out of bounds. [arrayIndexOutOfBounds]
+  ENR1(varchar, "sds", varchar, "242%4", varchar, "^7dfs");
+  ^
+unittest/sql/engine/expr/ob_expr_date_format_test.cpp:64:0: error: failed to expand 'F', Wrong number of parameters for macro 'EXPECT_FAIL_RESULT2'. [preprocessorErrorDirective]
+#define F(obj, t1, v1, t2, v2, ref_type, ref_value) \
+^
+unittest/sql/engine/expr/ob_expr_int2ip_test.cpp:48:0: error: failed to expand 'F', Wrong number of parameters for macro 'EXPECT_FAIL_RESULT1'. [preprocessorErrorDirective]
+#define F(obj, t1, v1, ref_type, ref_value) EXPECT_FAIL_RESULT1(obj, &buf, calc_result1, t1, v1, ref_type, ref_value)
+^
+unittest/sql/engine/expr/ob_expr_ip2int_test.cpp:48:0: error: failed to expand 'F', Wrong number of parameters for macro 'EXPECT_FAIL_RESULT1'. [preprocessorErrorDirective]
+#define F(obj, t1, v1, ref_type, ref_value) EXPECT_FAIL_RESULT1(obj, &buf, calc_result1, t1, v1, ref_type, ref_value)
+^
+unittest/sql/engine/expr/ob_expr_regexp_test.cpp:53:0: error: failed to expand 'F', Wrong number of parameters for macro 'EXPECT_FAIL_RESULT2'. [preprocessorErrorDirective]
+#define F(obj, t1, v1, t2, v2, ref_type, ref_value)                                    \
+^
+unittest/sql/engine/expr/ob_expr_str_to_date_test.cpp:64:0: error: failed to expand 'F', Wrong number of parameters for macro 'EXPECT_FAIL_RESULT2'. [preprocessorErrorDirective]
+#define F(obj, t1, v1, t2, v2, ref_type, ref_value) \
+^
+unittest/sql/engine/expr/ob_expr_unhex_test.cpp:48:0: error: failed to expand 'F', Wrong number of parameters for macro 'EXPECT_FAIL_RESULT1'. [preprocessorErrorDirective]
+#define F(obj, t1, v1, ref_type, ref_value) EXPECT_FAIL_RESULT1(obj, &buf, calc_result1, t1, v1, ref_type, ref_value)
+^
+unittest/sql/engine/join/test_hash_join_dump.cpp:294:1: error: syntax error [syntaxError]
+TEST_P(ObHashJoinDumpTest, inmemory)
+^
+unittest/sql/engine/set/test_hash_set_dump.cpp:403:1: error: syntax error [syntaxError]
+TEST_F(ObHashSetDumpTest, test_single)
+^
+unittest/sql/engine/test_engine.cpp:76:1: error: syntax error [syntaxError]
+TEST_F(TestEngine, basic_test)
+^
+unittest/sql/engine/test_physical_plan.cpp:32:1: error: syntax error [syntaxError]
+TEST_F(TestPhysicalPlan, test_get_view_table)
+^
+unittest/sql/engine/test_sql_fixed_array.cpp:39:1: error: syntax error [syntaxError]
+TEST(ObTestSqlFixedArray, push_back)
+^
+unittest/sql/monitor/test_monitor_info_manager.cpp:332:1: error: syntax error [syntaxError]
+TEST_F(TestMonitorInfoManager, simple_add_and_get)
+^
+unittest/sql/monitor/test_phy_operator_stats.cpp:47:1: error: syntax error [syntaxError]
+TEST_F(TestPhyOperatorStats, init)
+^
+unittest/sql/optimizer/test_explain_json_format.cpp:68:1: error: syntax error [syntaxError]
+TEST_F(ObLogPlanTest, ob_explain_test)
+^
+unittest/sql/optimizer/test_join_order.cpp:32:1: error: syntax error [syntaxError]
+TEST_F(TestJoinOrder, ob_join_order_select)
+^
+unittest/sql/optimizer/test_location_part_id.cpp:34:1: error: syntax error [syntaxError]
+TEST_F(TestLocationPartitionId, calc_part_id_by_rowkeys)
+^
+unittest/sql/optimizer/test_opt_est_sel.cpp:596:1: error: syntax error [syntaxError]
+TEST_F(TestOptEstSel, string_test)
+^
+unittest/sql/optimizer/test_optimizer.cpp:55:1: error: syntax error [syntaxError]
+TEST_F(TestOptimizer, ob_optimizer_dml)
+^
+unittest/sql/optimizer/test_optimizer_utils.cpp:129:11: error: syntax error [syntaxError]
+          if OB_FAIL (ObSqlParameterization::transform_syntax_tree(allocator_,
+          ^
+unittest/sql/optimizer/test_route_policy.cpp:81:1: error: syntax error [syntaxError]
+TEST_F(ObRoutePolicyTest, READONLY_ZONE_FIRST)
+^
+unittest/sql/optimizer/test_skyline_prunning.cpp:201:1: error: syntax error [syntaxError]
+TEST_F(ObSkylinePrunningTest, basic)
+^
+unittest/sql/parser/test_multi_parser.cpp:56:1: error: syntax error [syntaxError]
+TEST_F(TestMultiParser, basic_test)
+^
+unittest/sql/parser/test_parser.cpp:63:1: error: syntax error [syntaxError]
+TEST_F(TestParser, basic_test)
+^
+unittest/sql/plan_cache/test_pcv_set.cpp:102:1: error: syntax error [syntaxError]
+TEST_F(TestPCVSet, basic)
+^
+unittest/sql/plan_cache/test_plan_cache.cpp:332:1: error: syntax error [syntaxError]
+TEST_F(TestPlanCache, basic)
+^
+unittest/sql/plan_cache/test_plan_cache_manager.cpp:89:1: error: syntax error [syntaxError]
+TEST_F(TestPlanCacheManager, basic)
+^
+unittest/sql/plan_cache/test_plan_cache_value.cpp:109:1: error: syntax error [syntaxError]
+TEST_F(TestPlanCacheValue, basic)
+^
+unittest/sql/plan_cache/test_plan_set.cpp:138:1: error: syntax error [syntaxError]
+TEST_F(TestPlanSet, basic)
+^
+unittest/sql/resolver/ddl_resolver.cpp:67:1: error: syntax error [syntaxError]
+TEST_F(TestResolver, basic_test)
+^
+unittest/sql/resolver/expr/test_raw_expr_hash.cpp:57:1: error: syntax error [syntaxError]
+TEST_F(TestRawExprToStr, basic)
+^
+unittest/sql/resolver/expr/test_raw_expr_to_str.cpp:51:1: error: syntax error [syntaxError]
+TEST_F(TestRawExprToStr, basic)
+^
+unittest/sql/resolver/test_raw_expr.cpp:117:1: error: syntax error [syntaxError]
+TEST_F(TestRawExpr, basic_test)
+^
+unittest/sql/resolver/test_resolver.cpp:107:1: error: syntax error [syntaxError]
+TEST_F(TestResolver, basic_test)
+^
+unittest/sql/rewrite/test_transformer.cpp:654:1: error: syntax error [syntaxError]
+TEST_F(TestRewrite, test_from_cmd)
+^
+unittest/sql/session/test_basic_session_info.cpp:80:1: error: syntax error [syntaxError]
+TEST(test_basic_session_info, load_variables)
+^
+unittest/sql/test_sql_utils.cpp:105:5: error: Using 'memset' on struct that contains a 'std::vector'. [memsetClass]
+    memset(&clp, 0, sizeof(clp));
+    ^
+unittest/storage/blocksstable/slog/simple_ob_partition_image.h:119:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(SimpleObPartition)
+^
+unittest/storage/blocksstable/slog/test_storage_log_reader_writer.cpp:111:1: error: syntax error [syntaxError]
+TEST_F(TestStorageLogReaderWriter, normal)
+^
+unittest/storage/blocksstable/test_block_sstable_struct.cpp:112:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(SuperBlock20)
+^
+unittest/storage/blocksstable/test_bloom_filter_cache.cpp:50:1: error: syntax error [syntaxError]
+TEST(ObBloomFilterCache, test_normal)
+^
+unittest/storage/blocksstable/test_bloom_filter_data.cpp:290:1: error: syntax error [syntaxError]
+TEST_F(TestBloomFilterDataReaderWriter, test_cache_value_serial)
+^
+unittest/storage/blocksstable/test_column_map.cpp:60:1: error: syntax error [syntaxError]
+TEST_F(TestColumnMap, init_invalid)
+^
+unittest/storage/blocksstable/test_data_buffer.cpp:55:1: error: syntax error [syntaxError]
+TEST_F(TestDataBuffer, test_ObSelfBufferWriter)
+^
+unittest/storage/blocksstable/test_inspect_bad_block.cpp:227:1: error: syntax error [syntaxError]
+TEST_F(TestInspectBadBlock, check_macro_block)
+^
+unittest/storage/blocksstable/test_macro_block_id.cpp:37:1: error: syntax error [syntaxError]
+TEST_F(TestMacroBlockId, local_mode)
+^
+unittest/storage/blocksstable/test_mark_deletion.cpp:281:1: error: syntax error [syntaxError]
+TEST_F(TestMarkDeletion, write)
+^
+unittest/storage/blocksstable/test_micro_block_index_cache.cpp:422:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockIndexCache, range)
+^
+unittest/storage/blocksstable/test_micro_block_reader.cpp:108:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockReader, test_success)
+^
+unittest/storage/blocksstable/test_micro_block_scanner.cpp:142:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockScanner, test_scanner)
+^
+unittest/storage/blocksstable/test_micro_block_writer.cpp:101:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockWriter, test_init)
+^
+unittest/storage/blocksstable/test_raid_file_system.cpp:111:1: error: syntax error [syntaxError]
+TEST_F(TestRaidFileSystem, normal)
+^
+unittest/storage/blocksstable/test_ref_cnt.cpp:136:1: error: syntax error [syntaxError]
+TEST_F(TestStorageFile, test_inc_and_dec_ref)
+^
+unittest/storage/blocksstable/test_row_cache.cpp:104:1: error: syntax error [syntaxError]
+TEST_F(TestRowCache, normal)
+^
+unittest/storage/blocksstable/test_row_reader.cpp:245:1: error: syntax error [syntaxError]
+TEST_F(TestRowReader, test_number_float)
+^
+unittest/storage/blocksstable/test_row_writer.cpp:106:1: error: syntax error [syntaxError]
+TEST_F(TestRowWriter, test_init)
+^
+unittest/storage/blocksstable/test_storage_cache_suite.cpp:28:1: error: syntax error [syntaxError]
+TEST_F(TestStorageCacheSuite, test_cache_suite)
+^
+unittest/storage/blocksstable/test_tmp_file.cpp:557:1: error: syntax error [syntaxError]
+TEST_F(TestTmpFile, test_big_file)
+^
+unittest/storage/compaction/test_partition_merge_util.cpp:445:1: error: syntax error [syntaxError]
+TEST_F(TestPartitionMergeUtil, test_major_merge)
+^
+unittest/storage/memtable/mvcc/test_keybtree.cpp:144:1: error: syntax error [syntaxError]
+TEST(TestKeyBtree, smoke_test)
+^
+unittest/storage/memtable/mvcc/test_mvcc_callback.cpp:74:1: error: syntax error [syntaxError]
+TEST(TestObMvccCallback, remove_callback_test)
+^
+unittest/storage/memtable/mvcc/test_query_engine.cpp:31:1: error: syntax error [syntaxError]
+TEST(TestObQueryEngine, get_and_set_table_index_node)
+^
+unittest/storage/memtable/test_base.cpp:29:1: error: Unmatched '}'. Configuration: ''. [syntaxError]
+}
+^
+unittest/storage/memtable/test_memtable.cpp:205:1: error: syntax error [syntaxError]
+TEST(TestObMemtable, smoke_test)
+^
+unittest/storage/memtable/test_memtable_multi_version_row_iterator.cpp:163:1: error: syntax error [syntaxError]
+TEST_F(TestMemtableMultiVersionRowIterator, append_memtable_iter)
+^
+unittest/storage/mockcontainer/mock_ob_iterator.cpp:1403:1: error: syntax error [syntaxError]
+OB_DEF_SERIALIZE(MockObNewRowIterator)
+^
+unittest/storage/mockcontainer/test_storage.cpp:62:1: error: Unmatched '}'. Configuration: ''. [syntaxError]
+}
+^
+unittest/storage/replayengine/test_log_replay_engine.cpp:114:1: error: syntax error [syntaxError]
+TEST_F(ObLogReplayEngineTest, smoke_freeze_commit)
+^
+unittest/storage/test_all_micro_block_range_iterator.cpp:63:1: error: syntax error [syntaxError]
+TEST_F(TestAllMicroBlockRangeIterator, test_init)
+^
+unittest/storage/test_dag_size.cpp:32:1: error: syntax error [syntaxError]
+TEST_F(TestDagSize, test_size)
+^
+unittest/storage/test_dag_warning_history.cpp:34:1: error: syntax error [syntaxError]
+TEST_F(TestDagWarningHistory, init)
+^
+unittest/storage/test_handle_cache.cpp:56:1: error: syntax error [syntaxError]
+TEST_F(TestHandleCache, basic)
+^
+unittest/storage/test_hash_performance.cpp:300:1: error: syntax error [syntaxError]
+TEST_F(TestHashMapPerformance, test_performance)
+^
+unittest/storage/test_i_store.cpp:134:1: error: syntax error [syntaxError]
+TEST_F(TestIStore, test_size)
+^
+unittest/storage/test_interm_macro_mgr.cpp:67:1: error: syntax error [syntaxError]
+TEST_F(ObIntermMacroMgrTest, test_single)
+^
+unittest/storage/test_micro_block_row_scanner.cpp:171:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockRowScanner, test_minor_merge_sparse)
+^
+unittest/storage/test_micro_block_row_scanner_with_special_uncom_row.cpp:176:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockRowScanner, multi_uncom_trans_in_multi_micro_block_1_commit)
+^
+unittest/storage/test_micro_block_row_scanner_with_uncom_row.cpp:172:1: error: syntax error [syntaxError]
+TEST_F(TestMicroBlockRowScanner, uncommitted_row_commit)
+^
+unittest/storage/test_migrate_logical_row_writer.cpp:145:1: error: syntax error [syntaxError]
+TEST_F(TestMigrateLogicalRowWriter, border)
+^
+unittest/storage/test_migrate_rpc.cpp:120:1: error: syntax error [syntaxError]
+TEST_F(TestMigrateRpc, FetchPartitionInfo)
+^
+unittest/storage/test_multi_version_sparse_sstable_multi_get.cpp:119:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSparseSSTableMultiGet, multi_get_on_empty_sstable)
+^
+unittest/storage/test_multi_version_sparse_sstable_multi_scan.cpp:107:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSparseSSTableMultiScan, multi_scan_empty_sstable)
+^
+unittest/storage/test_multi_version_sparse_sstable_single_get.cpp:117:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSparseSSTableSingleGet, test_checksum)
+^
+unittest/storage/test_multi_version_sparse_sstable_single_scan.cpp:181:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSparseSSTableSingleScan, add_sql_sequence_col_test)
+^
+unittest/storage/test_multi_version_sstable_multi_get.cpp:119:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSSTableMultiGet, multi_get_on_empty_sstable)
+^
+unittest/storage/test_multi_version_sstable_multi_scan.cpp:106:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSSTableMultiScan, multi_scan_empty_sstable)
+^
+unittest/storage/test_multi_version_sstable_single_get.cpp:117:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSSTableSingleGet, exist)
+^
+unittest/storage/test_multi_version_sstable_single_scan.cpp:200:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionSSTableSingleScan, whole_scan_normal)
+^
+unittest/storage/test_multi_version_table_store.cpp:47:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionTableStore, add_gc_minor_sstable)
+^
+unittest/storage/test_multiple_merge.cpp:33:1: error: syntax error [syntaxError]
+TEST_F(ObMultipleMergeTest, test_sort_sstables_overlap)
+^
+unittest/storage/test_new_minor_fuser.cpp:508:1: error: syntax error [syntaxError]
+TEST_F(TestNewMinorFuserMerge, test_new_minor_fuser_with_rowkey_across_macro_block)
+^
+unittest/storage/test_ob_col_map.cpp:50:1: error: syntax error [syntaxError]
+TEST(TestObColMap, test_col_map_first_level)
+^
+unittest/storage/test_ob_freeze_info_snapshot_mgr.cpp:117:1: error: syntax error [syntaxError]
+TEST_F(TestFreezeInfoSnapshotMgr, test_rs_return_minus_one_for_gc_snapshot_info)
+^
+unittest/storage/test_parallel_external_sort.cpp:112:1: error: syntax error [syntaxError]
+DEFINE_SERIALIZE(TestItem)
+^
+unittest/storage/test_partition_merge_multi_version.cpp:1045:1: error: syntax error [syntaxError]
+TEST_F(TestMultiVersionMerge, rowkey_cross_three_macro_inc_merge)
+^
+unittest/storage/test_partition_migrator.cpp:90:1: error: syntax error [syntaxError]
+TEST_F(ObPartitionMigratorTest, update_base_source_use_candidate)
+^
+unittest/storage/test_partition_migrator_table_key_mgr.cpp:109:1: error: syntax error [syntaxError]
+TEST_F(TestPartitionMigrateTableKeyMgr, single_src_table_key)
+^
+unittest/storage/test_partition_range_spliter.cpp:391:1: error: syntax error [syntaxError]
+TEST_F(TestRangeSpliter, test_single_basic)
+^
+unittest/storage/test_pg_macro_meta_checkpoint.cpp:212:1: error: syntax error [syntaxError]
+TEST_F(TestPGMacroMetaCheckpoint, test_pg_macro_meta_checkpoint)
+^
+unittest/storage/test_pg_meta_checkpoint.cpp:112:1: error: syntax error [syntaxError]
+TEST_F(TestCheckpoint, test_pg_meta_checkpoint)
+^
+unittest/storage/test_range_iterator.cpp:181:1: error: syntax error [syntaxError]
+TEST(ObRowFuseTest, test_empty_range)
+^
+unittest/storage/test_reserved_data_mgr.cpp:165:1: error: syntax error [syntaxError]
+TEST_F(TestRecoveryDataMgr, enable_write_slog)
+^
+unittest/storage/test_row_fuse.cpp:186:1: error: syntax error [syntaxError]
+TEST(TestSparseRowFuse, test_sparse_row_fuse_same)
+^
+unittest/storage/test_row_sample_iterator.cpp:66:1: error: syntax error [syntaxError]
+TEST_F(TestObRowSampleIterator, test_sample)
+^
+unittest/storage/test_sstable.cpp:35:1: error: syntax error [syntaxError]
+TEST_F(TestSSTable, macro_block_iter)
+^
+unittest/storage/test_sstable_multi_exist.cpp:60:1: error: syntax error [syntaxError]
+TEST_F(TestSSTableMultiExist, multi_exist)
+^
+unittest/storage/test_sstable_multi_get.cpp:394:1: error: syntax error [syntaxError]
+TEST_F(TestSSTableMultiGet, test_border)
+^
+unittest/storage/test_sstable_multi_scan.cpp:631:1: error: syntax error [syntaxError]
+TEST_F(TestSSTableMultiScanner, test_single_get_normal)
+^
+unittest/storage/test_sstable_single_exist.cpp:60:1: error: syntax error [syntaxError]
+TEST_F(TestSSTableSingleExist, single_exist)
+^
+unittest/storage/test_sstable_single_get.cpp:68:1: error: syntax error [syntaxError]
+TEST_F(TestSSTableSingleGet, test_border_of_single_get)
+^
+unittest/storage/test_sstable_single_scan.cpp:371:1: error: syntax error [syntaxError]
+TEST_F(TestSSTableSingleScanner, test_border)
+^
+unittest/storage/test_storage_struct.cpp:35:1: error: syntax error [syntaxError]
+TEST_F(TestStorageStruct, test_recovery_point)
+^
+unittest/storage/test_table_store_stat_mgr.cpp:94:1: error: syntax error [syntaxError]
+TEST(TestTableStoreStatMgr, lru)
+^
+unittest/storage/test_tenant_file_mgr.cpp:59:1: error: syntax error [syntaxError]
+TEST_F(TestTenantFileMgr, test_file_op)
+^
+unittest/storage/transaction/performance.cpp:935:1: error: syntax error [syntaxError]
+TEST_F(TestPerformance, sp_readonly_performance)
+^
+unittest/storage/transaction/test_ob_clog_adapter.cpp:387:1: error: syntax error [syntaxError]
+TEST(TestClogAdapter, submit_EAGAIN)
+^
+unittest/storage/transaction/test_ob_gc_partition_adapter.cpp:481:1: error: syntax error [syntaxError]
+TEST_F(TestObGcPartitionAdapter, check_partition_exist)
+^
+unittest/storage/transaction/test_ob_gts_mgr.cpp:114:1: error: syntax error [syntaxError]
+TEST_F(TestObGtsMgr, handle_gts_request_by_leader)
+^
+unittest/storage/transaction/test_ob_location_adapter.cpp:55:1: error: syntax error [syntaxError]
+TEST_F(TestObLocationAdapter, init_destroy)
+^
+unittest/storage/transaction/test_ob_lts_source.cpp:72:1: error: syntax error [syntaxError]
+TEST_F(TestObLtsSource, get_gts)
+^
+unittest/storage/transaction/test_ob_mask_set.cpp:43:1: error: syntax error [syntaxError]
+TEST_F(TestObMaskSet, mask_object)
+^
+unittest/storage/transaction/test_ob_trans_audit_record_mgr.cpp:33:1: error: syntax error [syntaxError]
+TEST_F(TestObTransAuditRecordMgr, get_revert)
+^
+unittest/storage/transaction/test_ob_trans_define.cpp:52:1: error: syntax error [syntaxError]
+TEST_F(TestObTransDefine, trans_id_constructor)
+^
+unittest/storage/transaction/test_ob_trans_end_trans_callback.cpp:78:1: error: syntax error [syntaxError]
+TEST_F(TestObEndTransCallback, reset)
+^
+unittest/storage/transaction/test_ob_trans_factory.cpp:93:1: error: syntax error [syntaxError]
+TEST_F(TestObTransFactory, init_reset)
+^
+unittest/storage/transaction/test_ob_trans_log.cpp:55:1: error: syntax error [syntaxError]
+TEST_F(TestObTransLog, trans_log_init_invalid)
+^
+unittest/storage/transaction/test_ob_trans_mem_stat.cpp:41:1: error: syntax error [syntaxError]
+TEST_F(TestObTransMemStat, init_reset)
+^
+unittest/storage/transaction/test_ob_trans_msg.cpp:68:1: error: syntax error [syntaxError]
+TEST_F(TestObTransMsg, trans_msg_init_valid)
+^
+unittest/storage/transaction/test_ob_trans_partition_stat.cpp:42:1: error: syntax error [syntaxError]
+TEST_F(TestObTransPartitionStat, init_reset)
+^
+unittest/storage/transaction/test_ob_trans_result.cpp:61:1: error: syntax error [syntaxError]
+TEST_F(TestObTransResult, wait_timeout)
+^
+unittest/storage/transaction/test_ob_trans_result_info_mgr.cpp:125:1: error: syntax error [syntaxError]
+TEST(TestObTransResultInfoMgr, insert_gc)
+^
+unittest/storage/transaction/test_ob_trans_rpc.cpp:111:1: error: syntax error [syntaxError]
+TEST_F(TestObTransRpc, trans_rpc_task_alloc_free)
+^
+unittest/storage/transaction/test_ob_trans_stat.cpp:43:1: error: syntax error [syntaxError]
+TEST_F(TestObTransStat, init_reset)
+^
+unittest/storage/transaction/test_ob_trans_submit_log_cb.cpp:224:1: error: syntax error [syntaxError]
+TEST_F(TestObTransSubmitLogCb, init_set_log_type_reset)
+^
+unittest/tools/ob_error/test_ob_error.cpp:28:1: error: syntax error [syntaxError]
+TEST_F(TestObError, test_mgr)
+^
+nofile:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information. [toomanyconfigs]
